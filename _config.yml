@@ -2,8 +2,8 @@
 title: Dra. Alejandra Tabares Pozos
 email: a.tabaresp@uniandes.edu.co
 description: Personal webpage of Dra. Alejandra Tabares Pozos
-baseurl: ""
-url: ""
+baseurl: "/MyWebSite"
+url: "https://pozost.github.io"
 affiliation: I am part of the <a href="https://industrial.uniandes.edu.co/es" target="_blank">Industrial Engineering Department</a>  at Los Andes University.
 
 # Google analytics ID
