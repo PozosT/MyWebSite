@@ -1,0 +1,8 @@
+@incollection{franco2021mathematical,
+  title={Mathematical models and optimization techniques to support local electricity markets},
+  author={Franco, John Fredy and Macedo, Leonardo H and Arias, Nataly Ba{\~n}ol and Tabares, Alejandra and Romero, Rub{\'e}n and Soares, Jo{\~a}o},
+  booktitle={Local Electricity Markets},
+  pages={259--276},
+  year={2021},
+  publisher={Academic Press}
+}

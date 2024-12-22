@@ -1,0 +1,167 @@
+- title: "A mixed-binary linear formulation for the distribution system expansion planning problem"
+  authors: Pozos, Alejandra Tabares; De Oliveira, Marina Lavorato; Baquero, John Fredy Franco; Flores, Marcos Julio Rider
+  url: pozos2014mixed
+  image: pozos2014mixed.jpg
+  display: "2014 IEEE PES Transmission & Distribution Conference"
+  year: 2014
+  abstract: "This paper presents a mixed-binary linear programming model for distribution system expansion planning, providing insights into optimization and resource allocation."
+
+- title: "Robust joint expansion planning of electrical distribution systems and EV charging stations"
+  authors: Arias, Nataly Banol; Tabares, Alejandra; Franco, John F; Lavorato, Marina; Romero, Rubén
+  url: arias2017robust
+  image: arias2017robust.jpg
+  display: "IEEE Transactions on Sustainable Energy"
+  year: 2017
+  abstract: "This study explores robust joint planning of electrical distribution systems with electric vehicle charging stations, addressing uncertainties in demand and generation."
+
+- title: "Multistage long-term expansion planning of electrical distribution systems considering multiple alternatives"
+  authors: Tabares, Alejandra; Franco, John F; Lavorato, Marina; Rider, Marcos J
+  url: tabares2015multistage
+  image: tabares2015multistage.jpg
+  display: "IEEE Transactions on Power Systems"
+  year: 2015
+  abstract: "The paper introduces a multistage long-term planning framework for electrical distribution systems, evaluating multiple alternatives and optimization scenarios."
+
+- title: "An enhanced algebraic approach for the analytical reliability assessment of distribution systems"
+  authors: Tabares, Alejandra; Munoz-Delgado, Gregorio; Franco, John F; Arroyo, Jose M; Contreras, Javier
+  url: tabares2019enhanced
+  image: tabares2019enhanced.jpg
+  display: "IEEE Transactions on Power Systems"
+  year: 2019
+  abstract: "This work enhances algebraic methods for assessing the reliability of electrical distribution systems, offering robust metrics for system performance evaluation."
+
+- title: "A stochastic programming model for the planning of distribution systems considering renewable distributed generation and CO2 emissions"
+  authors: De Lima, Tayenne Dias; Tabares, Alejandra; Arias, Nataly Banol; Franco, John F
+  url: delima2019stochastic
+  image: delima2019stochastic.jpg
+  display: "2019 IEEE PES Innovative Smart Grid Technologies Conference"
+  year: 2019
+  abstract: "The study develops a stochastic programming model for renewable generation and CO2 emissions in distribution system planning."
+
+- title: "Optimal capacity sizing for the integration of a battery and photovoltaic microgrid to supply auxiliary services in substations under a contingency"
+  authors: Tabares, Alejandra; Martinez, Norberto; Ginez, Lucas; Resende, José F; Brito, Nierbeth; Franco, John Fredy
+  url: tabares2020optimal
+  image: tabares2020optimal.jpg
+  display: "Energies"
+  year: 2020
+  abstract: "This paper investigates optimal sizing of battery and photovoltaic microgrids for auxiliary services in substations during contingencies."
+
+- title: "Mathematical optimization versus Metaheuristic techniques: A performance comparison for reconfiguration of distribution systems"
+  authors: Silveira, Christoffer L Bezão; Tabares, Alejandra; Faria, Lucas Teles; Franco, John F
+  url: silveira2021mathematical
+  image: silveira2021mathematical.jpg
+  display: "Electric Power Systems Research"
+  year: 2021
+  abstract: "This study compares mathematical optimization techniques and metaheuristics in solving distribution system reconfiguration problems."
+
+- title: "Multistage reliability-based expansion planning of AC distribution networks using a mixed-integer linear programming model"
+  authors: Tabares, Alejandra; Muñoz-Delgado, Gregorio; Franco, John F; Arroyo, José M; Contreras, Javier
+  url: tabares2022multistage
+  image: tabares2022multistage.jpg
+  display: "International Journal of Electrical Power & Energy Systems"
+  year: 2022
+  abstract: "The paper presents a novel multistage reliability-based planning model for AC distribution networks, incorporating post-fault reconfiguration."
+
+- title: "A clustering approach for the optimal siting of recharging stations in the electric vehicle routing problem with time windows"
+  authors: Sánchez, Danny García; Tabares, Alejandra; Faria, Lucas Teles; Rivera, Juan Carlos; Franco, John Fredy
+  url: sanchez2022clustering
+  image: sanchez2022clustering.jpg
+  display: "Energies"
+  year: 2022
+  abstract: "The paper presents a clustering methodology for determining optimal sites for EV recharging stations while addressing time-window constraints."
+
+- title: "Using Stochastic Dual Dynamic Programming to Solve the Multi-Stage Energy Management Problem in Microgrids"
+  authors: Tabares, Alejandra; Cortés, Pablo
+  url: tabares2024using
+  image: tabares2024using.jpg
+  display: "Energies"
+  year: 2024
+  abstract: "This paper uses Stochastic Dual Dynamic Programming (SDDP) to optimize multi-stage energy management for microgrids under uncertainty."
+
+- title: "Planning of reserve branches to increase reconfiguration capability in distribution systems: a scenario-based convex programming approach"
+  authors: Tabares, Alejandra; Puerta, Gabriel F; Franco, John F; Romero, Ruben A
+  url: tabares2021planning
+  image: tabares2021planning.jpg
+  display: "IEEE Access"
+  year: 2021
+  abstract: "This paper presents a scenario-based convex programming model to enhance reconfiguration capabilities in electrical distribution systems by planning reserve branches."
+
+- title: "Hybrid stochastic/information gap decision theory model for optimal energy management of grid-connected microgrids with uncertainties in renewable energy generation and demand"
+  authors: Zandrazavi, Seyed Farhad; Tabares, Alejandra; Franco, John Fredy
+  url: zandrazavi2021hybrid
+  image: zandrazavi2021hybrid.jpg
+  display: "2021 IEEE International Conference on Environment and Electrical Engineering"
+  year: 2021
+  abstract: "A hybrid model combining stochastic programming and information gap decision theory for managing uncertainties in renewable generation and energy demand within microgrids."
+
+- title: "Stochastic multi-objective optimal energy management of grid-connected unbalanced microgrids with renewable energy generation and plug-in electric vehicles"
+  authors: Zandrazavi, Seyed Farhad; Guzman, Cindy Paola; Tabares, Alejandra; Quiros-Tortos, Jairo; Franco, John Fredy
+  url: zandrazavi2022stochastic
+  image: zandrazavi2022stochastic.jpg
+  display: "Energy"
+  year: 2022
+  abstract: "This paper explores multi-objective stochastic programming to optimize energy management in grid-connected unbalanced microgrids, including renewable energy and EV integration."
+
+- title: "A clustering approach for the optimal siting of recharging stations in the electric vehicle routing problem with time windows"
+  authors: Sánchez, Danny García; Tabares, Alejandra; Faria, Lucas Teles; Rivera, Juan Carlos; Franco, John Fredy
+  url: sanchez2022clustering
+  image: sanchez2022clustering.jpg
+  display: "Energies"
+  year: 2022
+  abstract: "Proposes a clustering methodology for optimal recharging station siting while solving vehicle routing problems with time constraints."
+
+- title: "Spatial and Temporal Analysis Applied to the Optimal Battery Allocation in Electrical Distribution Systems"
+  authors: Martinez, Norberto A; Faria, Lucas T; Tabares, Alejandra; Franco, John F
+  url: martinez2022spatial
+  image: martinez2022spatial.jpg
+  display: "GitHub"
+  year: 2022
+  abstract: "This work investigates spatial and temporal analysis methodologies for optimal battery allocation in electrical distribution systems."
+
+- title: "Convex Optimization Methods for the Restoration Topology and the Switching Sequence Restoration in Distribution Systems"
+  authors: Franco, John Fredy; Martínez, Norberto; Tabares, Alejandra; Bezão, Christoffer L; Faria, Lucas Teles
+  url: franco2021convex
+  image: franco2021convex.jpg
+  display: "Simposio Internacional sobre la Calidad de la Energía Eléctrica"
+  year: 2021
+  abstract: "Presents convex optimization methods for the restoration topology and switching sequences in electrical distribution systems."
+
+- title: "Latent Space Representations for Marker-Less Realtime Hand-Eye Calibration"
+  authors: Martínez-Franco, Juan Camilo; Rojas-Álvarez, Ariel; Tabares, Alejandra; Álvarez-Martínez, David; Marín-Moreno, César Augusto
+  url: martinez2024latent
+  image: martinez2024latent.jpg
+  display: "Sensors"
+  year: 2024
+  abstract: "Introduces latent space representations for real-time hand-eye calibration using marker-less systems to improve performance in robotic systems."
+
+- title: "AI-Powered Dynamic Fault Detection and Performance Assessment in Photovoltaic Systems"
+  authors: Salazar-Peña, Nelson; Tabares, Alejandra; González-Mancera, Andrés
+  url: salazar2024ai
+  image: salazar2024ai.jpg
+  display: "arXiv preprint"
+  year: 2024
+  abstract: "Develops an AI-driven framework for dynamic fault detection and performance evaluation in photovoltaic systems."
+
+- title: "Optimal hybrid backup systems for substation auxiliary services during outages through stochastic programming"
+  authors: Holzbach, Matheus; Martínez, Norberto Abrante; Teles de Faria, Lucas; Tabares, Alejandra; Resende, José F; Franco, John Fredy
+  url: holzbach2025optimal
+  image: holzbach2025optimal.jpg
+  display: "Electric Power Systems Research"
+  year: 2025
+  abstract: "Proposes optimal hybrid backup systems for substation auxiliary services using stochastic programming to improve resilience during outages."
+
+- title: "Sequential stochastic and bootstrap methods to generate synthetic solar irradiance time series of high temporal resolution based on historical observations"
+  authors: Salazar-Peña, Nelson; Tabares, Alejandra; González-Mancera, Andrés
+  url: salazar2023sequential
+  image: salazar2023sequential.jpg
+  display: "Solar Energy"
+  year: 2023
+  abstract: "Introduces sequential stochastic and bootstrap methodologies for generating synthetic solar irradiance time series with high temporal resolution."
+
+- title: "Strategically Influencing Seat Selection in Low-Cost Carriers: A GRASP Approach for Revenue Maximization"
+  authors: Merizalde, Andrés; Rubiano, Gustavo; Pardo, Germán Roberto; Tabares, Alejandra; Álvarez-Martínez, David
+  url: merizalde2024strategically
+  image: merizalde2024strategically.jpg
+  display: "Metaheuristics International Conference"
+  year: 2024
+  abstract: "Explores the use of a GRASP-based approach to optimize seat selection in low-cost carriers for revenue maximization."

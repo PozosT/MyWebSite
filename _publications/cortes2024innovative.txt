@@ -1,0 +1,10 @@
+@article{cortes2024innovative,
+  title={An Innovative Approach to Radiality Representation in Electrical Distribution System Reconfiguration: Enhanced Efficiency and Computational Performance},
+  author={Cort{\'e}s Sanabria, Pablo Jos{\'e} and Tabares Pozos, Alejandra and {\'A}lvarez-Mart{\'\i}nez, David and Noriega Barbosa, Diego Alejandro},
+  journal={Energies},
+  volume={17},
+  number={11},
+  pages={2633},
+  year={2024},
+  publisher={MDPI}
+}

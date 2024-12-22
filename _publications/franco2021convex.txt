@@ -1,0 +1,7 @@
+@inproceedings{franco2021convex,
+  title={Convex Optimization Methods for the Restoration Topology and the Switching Sequence Restoration in Distribution Systems},
+  author={Franco, John Fredy and Mart{\'\i}nez, Norberto and Tabares, Alejandra and Bez{\~a}o, Christoffer L and Faria, Lucas T},
+  booktitle={Simposio Internacional sobre la Calidad de la Energ{\'\i}a El{\'e}ctrica-SICEL},
+  volume={10},
+  year={2021}
+}

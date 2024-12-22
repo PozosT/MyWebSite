@@ -1,0 +1,9 @@
+@article{gonzalez2024seat,
+  title={Seat assignment recommendation in airlines purchase flow to increase ancillary revenue considering weight and balance constraints},
+  author={Gonz{\'a}lez, Germ{\'a}n Pardo and Pozos, Alejandra Tabares and Quiroga, Camilo and {\'A}lvarez-Mart{\'\i}nez, David},
+  journal={Journal of Air Transport Management},
+  volume={117},
+  pages={102582},
+  year={2024},
+  publisher={Elsevier}
+}

@@ -1,0 +1,10 @@
+@article{tabares2015multistage,
+  title={Multistage long-term expansion planning of electrical distribution systems considering multiple alternatives},
+  author={Tabares, Alejandra and Franco, John F and Lavorato, Marina and Rider, Marcos J},
+  journal={IEEE Transactions on Power Systems},
+  volume={31},
+  number={3},
+  pages={1900--1914},
+  year={2015},
+  publisher={IEEE}
+}

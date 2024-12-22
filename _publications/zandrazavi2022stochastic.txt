@@ -1,0 +1,9 @@
+@article{zandrazavi2022stochastic,
+  title={Stochastic multi-objective optimal energy management of grid-connected unbalanced microgrids with renewable energy generation and plug-in electric vehicles},
+  author={Zandrazavi, Seyed Farhad and Guzman, Cindy Paola and Pozos, Alejandra Tabares and Quiros-Tortos, Jairo and Franco, John Fredy},
+  journal={Energy},
+  volume={241},
+  pages={122884},
+  year={2022},
+  publisher={Pergamon}
+}

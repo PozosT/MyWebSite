@@ -1,0 +1,8 @@
+@inproceedings{zandrazavi2023resiliency,
+  title={A Resiliency-oriented Optimal Operation of Microgrids Considering Electric Vehicles},
+  author={Zandrazavi, Seyed Farhad and Tabares, Alejandra and Franco, John Fredy and Shafie-Khah, Miadreza and Soares, Jo{\~a}o and Vale, Zita},
+  booktitle={2023 International Conference on Future Energy Solutions (FES)},
+  pages={1--6},
+  year={2023},
+  organization={IEEE}
+}

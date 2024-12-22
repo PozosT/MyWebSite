@@ -1,0 +1,11 @@
+
+
+@article{salazar2023sequential,
+  title={Sequential stochastic and bootstrap methods to generate synthetic solar irradiance time series of high temporal resolution based on historical observations},
+  author={Salazar-Pe{\~n}a, Nelson and Tabares, Alejandra and Gonz{\'a}lez-Mancera, Andr{\'e}s},
+  journal={Solar Energy},
+  volume={264},
+  pages={112030},
+  year={2023},
+  publisher={Pergamon}
+}

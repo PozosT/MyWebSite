@@ -1,0 +1,9 @@
+@article{tabares2022multistage,
+  title={Multistage reliability-based expansion planning of AC distribution networks using a mixed-integer linear programming model},
+  author={Tabares, Alejandra and Mu{\~n}oz-Delgado, Gregorio and Franco, John F and Arroyo, Jos{\'e} M and Contreras, Javier},
+  journal={International Journal of Electrical Power \& Energy Systems},
+  volume={138},
+  pages={107916},
+  year={2022},
+  publisher={Elsevier}
+}

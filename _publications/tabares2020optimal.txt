@@ -1,0 +1,11 @@
+
+@article{tabares2020optimal,
+  title={Optimal capacity sizing for the integration of a battery and photovoltaic microgrid to supply auxiliary services in substations under a contingency},
+  author={Tabares, Alejandra and Martinez, Norberto and Ginez, Lucas and Resende, Jos{\'e} F and Brito, Nierbeth and Franco, John Fredy},
+  journal={Energies},
+  volume={13},
+  number={22},
+  pages={6037},
+  year={2020},
+  publisher={Mdpi}
+}

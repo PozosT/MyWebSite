@@ -1,0 +1,6 @@
+@misc{martinez2022spatial,
+  title={Spatial and Temporal Analysis Applied to the Optimal Battery Allocation in Electrical Distribution Systems},
+  author={Martinez, Norberto A and Faria, Lucas T and Tabares, Alejandra and Franco, John F},
+  year={2022},
+  publisher={GitHub}
+}

@@ -1,0 +1,9 @@
+@article{tabares2021planning,
+  title={Planning of reserve branches to increase reconfiguration capability in distribution systems: a scenario-based convex programming approach},
+  author={Tabares, Alejandra and Puerta, Gabriel F and Franco, John F and Romero, Ruben A},
+  journal={IEEE Access},
+  volume={9},
+  pages={104707--104721},
+  year={2021},
+  publisher={IEEE}
+}

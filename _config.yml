@@ -1,0 +1,68 @@
+# Site settings
+title: Dra. Alejandra Tabares Pozos
+email: a.tabaresp@uniandes.edu.co
+description: Personal webpage of Dra. Alejandra Tabares Pozos
+baseurl: ""
+url: ""
+affiliation: I am part of the <a href="https://industrial.uniandes.edu.co/es" target="_blank">Industrial Engineering Department</a>  at Los Andes University.
+
+# Google analytics ID
+google_analytics:
+
+# Location info. (shown in footer)
+location: >
+  Department of Industrial Engineering<br/>
+  Cra 1 Este No 19A - 40<br/>
+  Edificio Mario Laserna<br/>
+  Bogotá - Colombia<br/>
+
+
+# Contact info. (shown in footer)
+contact: >
+    Contact me via email: <a href="mailto:a.tabaresp@uniandes.edu.co" target="_blank">a.tabaresp@uniandes.edu.co</a><br/>
+
+# Pages shown in navbar
+nav_pages:
+  - name: about
+  - name: publications
+  - name: talks
+  - name: research
+  - name: education
+  - name: volunteering
+
+# Do you want to group your publications by year? {true/false}
+group_pub_by_year: true
+
+collections:
+  courses:
+    output: true
+  publications:
+    output: true
+  workshops:
+    output: true
+
+include:
+  - .htaccess
+  - _pages
+
+sass:
+  sass_dir: _sass
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  parse_block_html: true # default for kramdown is false. This will enable using Markdown links

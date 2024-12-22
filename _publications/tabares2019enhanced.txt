@@ -1,0 +1,10 @@
+@article{tabares2019enhanced,
+  title={An enhanced algebraic approach for the analytical reliability assessment of distribution systems},
+  author={Tabares, Alejandra and Munoz-Delgado, Gregorio and Franco, John F and Arroyo, Jose M and Contreras, Javier},
+  journal={IEEE Transactions on Power Systems},
+  volume={34},
+  number={4},
+  pages={2870--2879},
+  year={2019},
+  publisher={IEEE}
+}

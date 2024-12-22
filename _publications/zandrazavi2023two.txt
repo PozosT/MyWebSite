@@ -1,0 +1,8 @@
+@inproceedings{zandrazavi2023two,
+  title={A Two-stage Stochastic Model for Coordinated Operation of Natural Gas and Microgrid Networks},
+  author={Zandrazavi, Seyed Farhad and Tabares, Alejandra and Franco, John Fredy and Shafie-Khah, Miadreza and Soares, Jo{\~a}o and Vale, Zita},
+  booktitle={2023 IEEE Belgrade PowerTech},
+  pages={01--07},
+  year={2023},
+  organization={IEEE}
+}

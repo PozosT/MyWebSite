@@ -1,0 +1,10 @@
+@article{martinez2024latent,
+  title={Latent Space Representations for Marker-Less Realtime Hand--Eye Calibration},
+  author={Mart{\'\i}nez-Franco, Juan Camilo and Rojas-{\'A}lvarez, Ariel and Tabares, Alejandra and {\'A}lvarez-Mart{\'\i}nez, David and Mar{\'\i}n-Moreno, C{\'e}sar Augusto},
+  journal={Sensors},
+  volume={24},
+  number={14},
+  pages={4662},
+  year={2024},
+  publisher={MDPI}
+}

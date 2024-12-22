@@ -1,0 +1,9 @@
+@article{de2021investment,
+  title={Investment \& generation costs vs CO2 emissions in the distribution system expansion planning: A multi-objective stochastic programming approach},
+  author={de Lima, Tayenne Dias and Tabares, Alejandra and Arias, Nataly Banol and Franco, John F},
+  journal={International Journal of Electrical Power \& Energy Systems},
+  volume={131},
+  pages={106925},
+  year={2021},
+  publisher={Elsevier}
+}

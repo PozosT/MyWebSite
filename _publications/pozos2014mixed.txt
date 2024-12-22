@@ -1,0 +1,8 @@
+@inproceedings{pozos2014mixed,
+  title={A mixed-binary linear formulation for the distribution system expansion planning problem},
+  author={Pozos, Alejandra Tabares and De Oliveira, Marina Lavorato and Baquero, Jonh Fredy Franco and Flores, Marcos Julio Rider},
+  booktitle={2014 IEEE PES Transmission \& Distribution Conference and Exposition-Latin America (PES T\&D-LA)},
+  pages={1--6},
+  year={2014},
+  organization={IEEE}
+}

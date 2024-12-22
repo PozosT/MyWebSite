@@ -1,0 +1,10 @@
+@article{sanchez2022clustering,
+  title={A clustering approach for the optimal siting of recharging stations in the electric vehicle routing problem with time windows},
+  author={S{\'a}nchez, Danny Garc{\'\i}a and Tabares, Alejandra and Faria, Lucas Teles and Rivera, Juan Carlos and Franco, John Fredy},
+  journal={Energies},
+  volume={15},
+  number={7},
+  pages={2372},
+  year={2022},
+  publisher={MDPI}
+}

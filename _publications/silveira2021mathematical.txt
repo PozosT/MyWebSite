@@ -1,0 +1,9 @@
+@article{silveira2021mathematical,
+  title={Mathematical optimization versus Metaheuristic techniques: A performance comparison for reconfiguration of distribution systems},
+  author={Silveira, Christoffer L Bez{\~a}o and Tabares, Alejandra and Faria, Lucas Teles and Franco, John F},
+  journal={Electric Power Systems Research},
+  volume={196},
+  pages={107272},
+  year={2021},
+  publisher={Elsevier}
+}
