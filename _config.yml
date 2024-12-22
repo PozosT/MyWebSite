@@ -2,7 +2,7 @@
 title: Dra. Alejandra Tabares Pozos
 email: a.tabaresp@uniandes.edu.co
 description: Personal webpage of Dra. Alejandra Tabares Pozos
-baseurl: "/MyWebSite"
+baseurl: "" # Ajustado para publicación directa en GitHub Pages
 url: "https://pozost.github.io"
 affiliation: I am part of the <a href="https://industrial.uniandes.edu.co/es" target="_blank">Industrial Engineering Department</a>  at Los Andes University.
 
@@ -15,7 +15,6 @@ location: >
   Cra 1 Este No 19A - 40<br/>
   Edificio Mario Laserna<br/>
   Bogotá - Colombia<br/>
-
 
 # Contact info. (shown in footer)
 contact: >
@@ -66,3 +65,6 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
   parse_block_html: true # default for kramdown is false. This will enable using Markdown links
+
+# Add site.baseurl to resources for better compatibility
+# Example in HTML: <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
