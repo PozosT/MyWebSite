@@ -1,13 +1,16 @@
 ---
-title: "News"
-layout: textlay
+title: "All News"
+layout: gridlay
 sitemap: false
-permalink: /allnews.html
+permalink: /allnews/
 ---
 
-# News
+# All News
 
-{% for article in site.data.news %}
-<p><strong>{{ article.date }}</strong><br>
-{{ article.headline }}</p>
+<ul>
+{% for news in site.data.news %}
+  <li>
+    <a href="{{ site.baseurl }}/news/{{ news.slug }}">{{ news.title }}</a> - {{ news.date }}
+  </li>
 {% endfor %}
+</ul>

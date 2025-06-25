@@ -8,7 +8,7 @@ permalink: /research/
 # Research
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/research/microgrid_operations.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
+  <img src="{{ site.baseurl }}/images/research/microgrid_operations.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
 
 #### Reinforcement Learning and Quantum Optimization for Microgrid Operations
 
@@ -45,7 +45,7 @@ Another ongoing research project focuses on communication between microgrids, en
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/research/renewable_energy_integration.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
+  <img src="{{ site.baseurl }}/images/research/renewable_energy_integration.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
 
 #### Renewable Energy Integration and Three-Phase Grid Representations
 
@@ -56,7 +56,7 @@ My doctoral research included the integration of renewable energy into microgrid
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/research/local_energy_markets.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
+  <img src="{{ site.baseurl }}/images/research/local_energy_markets.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
 
 #### Future Directions
 
@@ -64,4 +64,20 @@ In the future, my research will continue to explore the intersection of artifici
 
 <ul style="overflow: hidden">
 </ul>
+</div>
+
+<div class="rowl1">
+  <img src="{{ site.baseurl }}/images/research/auditory_feedback_ad.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <h4>Auditory feedback in advanced driver assistance systems</h4>
+  <ul style="overflow: hidden">
+    <li>Research on the use of auditory feedback to improve driver performance and safety.</li>
+  </ul>
+</div>
+
+<div class="rowl1">
+  <img src="{{ site.baseurl }}/images/research/multi_user_communication.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <h4>Multi-user communication in automated vehicles</h4>
+  <ul style="overflow: hidden">
+    <li>Exploring communication strategies for multiple users in shared automated vehicles.</li>
+  </ul>
 </div>

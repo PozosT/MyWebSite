@@ -1,14 +1,14 @@
 <!-- SEO Meta Tags -->
-<meta name="author" content="{{ site.title }}">
+<meta name="author" content="{{ site.author | default: 'Alejandra Tabares' }}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="{{ page.url | prepend: site.url }}">
-<meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/og-image.jpg">
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="{{ site.baseurl }}/images/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="{{ site.title }}">
@@ -16,15 +16,15 @@
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="{{ page.url | prepend: site.url }}">
-<meta property="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-<meta property="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta property="twitter:image" content="{{ site.url }}{{ site.baseurl }}/images/twitter-image.jpg">
-<meta property="twitter:creator" content="@alejandratabares">
+<meta property="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+<meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="twitter:image" content="{{ site.baseurl }}/images/twitter-image.jpg">
+<meta property="twitter:creator" content="@{{ site.twitter_username | default: 'alejandratabares' }}">
 <meta property="twitter:site" content="@alejandratabares">
 
 <!-- Additional SEO Meta Tags -->
-<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}Alejandra Tabares Pozos, Universidad de los Andes, Energy Systems, AI, Machine Learning, Optimization, Renewable Energy, Power Systems, Research, Academic{% endif %}">
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords | default: 'energy systems, optimization, renewable energy, AI, machine learning, Universidad de los Andes' }}{% endif %}">
 <meta name="subject" content="Academic Research in Energy Systems and AI">
 <meta name="classification" content="Academic">
 <meta name="coverage" content="Worldwide">
@@ -33,7 +33,7 @@
 <meta name="revisit-after" content="7 days">
 
 <!-- Canonical URL -->
-<link rel="canonical" href="{{ page.url | prepend: site.url }}">
+<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
 
 <!-- Language and Region -->
 <meta http-equiv="content-language" content="en">
@@ -54,45 +54,34 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Dra. Alejandra Tabares Pozos",
+  "name": "{{ site.author | default: 'Alejandra Tabares' }}",
+  "url": "{{ site.url }}{{ site.baseurl }}",
+  "image": "{{ site.baseurl }}/images/team/Alejandra_seria.jpeg",
+  "sameAs": [
+    "https://scholar.google.com/citations?user=C9PY5CwAAAAJ&hl=en",
+    "https://www.linkedin.com/in/alejandra-tabares-pozos/",
+    "https://github.com/alejandratabares"
+  ],
   "jobTitle": "Assistant Professor",
   "worksFor": {
     "@type": "Organization",
     "name": "Universidad de los Andes",
     "url": "https://www.uniandes.edu.co"
   },
-  "alumniOf": [
-    {
-      "@type": "Organization",
-      "name": "Universidade Estadual Paulista (UNESP)"
-    },
-    {
-      "@type": "Organization", 
-      "name": "Universidad Tecnológica de Pereira"
-    }
-  ],
+  "alumniOf": {
+    "@type": "Organization",
+    "name": "Universidade Estadual Paulista (UNESP)",
+    "url": "https://www.unesp.br"
+  },
   "knowsAbout": [
     "Energy Systems",
-    "Artificial Intelligence",
-    "Machine Learning",
     "Optimization",
     "Renewable Energy",
-    "Power Systems",
-    "Solar Energy Prediction"
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Power Systems"
   ],
-  "url": "{{ site.url }}",
-  "email": "a.tabaresp@uniandes.edu.co",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Bogotá",
-    "addressCountry": "CO",
-    "addressRegion": "Cundinamarca"
-  },
-  "sameAs": [
-    "https://scholar.google.com/citations?user=C9PY5CwAAAAJ&hl=en",
-    "https://www.linkedin.com/in/alejandra-tabares-pozos",
-    "https://github.com/alejandratabares"
-  ]
+  "description": "{{ site.description | default: 'Assistant Professor at Universidad de los Andes specializing in AI-driven energy systems and optimization research.' }}"
 }
 </script>
 
@@ -101,13 +90,20 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Universidad de los Andes",
-  "url": "https://www.uniandes.edu.co",
-  "logo": "{{ site.url }}{{ site.baseurl }}/images/logos/uniandes-logo.png",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}{{ site.baseurl }}",
+  "logo": "{{ site.baseurl }}/images/logos/uniandes-logo.png",
+  "description": "{{ site.description | default: 'Academic website of Alejandra Tabares, Assistant Professor at Universidad de los Andes.' }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CO",
+    "addressLocality": "Bogotá",
+    "addressRegion": "Cundinamarca"
+  },
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+57-1-339-4949",
-    "contactType": "academic"
+    "contactType": "academic",
+    "email": "a.tabaresp@uniandes.edu.co"
   }
 }
 </script>

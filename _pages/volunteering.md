@@ -7,7 +7,7 @@ permalink: /volunteering/
 
 # Volunteering and organisation of events
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/volunteering/tudelft-defence.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img src="{{ site.baseurl }}/images/volunteering/tudelft-defence.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
 
 #### Academia
 
@@ -18,7 +18,7 @@ At TU Delft, during 2014–2018 I was a member of the 3mE PhD council. Within th
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/volunteering/rmi-berlin.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img src="{{ site.baseurl }}/images/volunteering/rmi-berlin.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
 
 #### Marie Curie Alumni Association (MCAA)
 
@@ -33,7 +33,7 @@ During 2017–2021 I was a chair of the [Bridging Science and Business (BSB) wor
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/volunteering/ema-board.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img src="{{ site.baseurl }}/images/volunteering/ema-board.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
 
 #### Erasmus Mundus Association (EMA)
 
@@ -44,7 +44,7 @@ During 2017–2021 I was a chair of the [Bridging Science and Business (BSB) wor
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/volunteering/opendata-4tu.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img src="{{ site.baseurl }}/images/volunteering/opendata-4tu.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
 
 #### Open science
 
@@ -55,11 +55,11 @@ As an avid supporter of open science, since 2019, I have been a participant in [
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/ua/donations.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
+  <img src="{{ site.baseurl }}/images/ua/donations.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
 
 #### Ukraine 🇺🇦
 
-Together with my friends in Poland, and Ukraine I raise money and buy supplies to give direct support to civilians who are now risking their lives to protect the liberty in Ukraine. It all started with us searching for components of bulletproof vests for medics and local defenders assembled by our volunteers in Kharkiv. [Read more and see how to donate](/ua). Since 2017, I have also been a member of [PGA Ukraine](http://pga.org.ua).
+Together with my friends in Poland, and Ukraine I raise money and buy supplies to give direct support to civilians who are now risking their lives to protect the liberty in Ukraine. It all started with us searching for components of bulletproof vests for medics and local defenders assembled by our volunteers in Kharkiv. [Read more and see how to donate]({{ site.baseurl }}/ua/). Since 2017, I have also been a member of [PGA Ukraine](http://pga.org.ua).
 
   <ul style="overflow: hidden">
   </ul>

@@ -2,8 +2,22 @@
 title: "Home"
 layout: homelay
 sitemap: false
-permalink: /
+permalink: /home/
 ---
+
+<div class="home-intro">
+  <img src="{{ site.baseurl }}/images/team/Alejandra_seria.jpeg" class="img-responsive home-avatar" alt="Alejandra Tabares" />
+  <h1>Bienvenidos al sitio web académico de Alejandra Tabares</h1>
+  <p>Profesora Asistente, Universidad de los Andes</p>
+  <nav class="home-nav">
+    <a href="{{ site.baseurl }}/about/">Sobre mí</a>
+    <a href="{{ site.baseurl }}/publications/">Publicaciones</a>
+    <a href="{{ site.baseurl }}/research/">Investigación</a>
+    <a href="{{ site.baseurl }}/team/">Equipo</a>
+    <a href="{{ site.baseurl }}/volunteering/">Voluntariado</a>
+    <a href="{{ site.baseurl }}/ua/">Ayuda a Ucrania</a>
+  </nav>
+</div>
 
 <!-- Hero Section -->
 <section class="hero-section" data-aos="fade-up">
@@ -18,16 +32,16 @@ permalink: /
           <span class="text-gradient">AI-driven Energy Systems & Optimization Research</span>
         </p>
         <div class="hero-buttons">
-          <a href="/publications" class="btn btn-primary btn-lg me-3">
+          <a href="{{ site.baseurl }}/publications" class="btn btn-primary btn-lg me-3">
             <i class="fas fa-book me-2"></i>View Publications
           </a>
-          <a href="/research" class="btn btn-outline-light btn-lg">
+          <a href="{{ site.baseurl }}/research" class="btn btn-outline-light btn-lg">
             <i class="fas fa-microscope me-2"></i>Research Areas
           </a>
         </div>
       </div>
       <div class="col-lg-4 text-center">
-        <img src="/images/team/Alejandra_seria.jpeg" alt="Dr. Alejandra Tabares Pozos" class="img-fluid rounded-circle shadow-lg" style="max-width: 300px;">
+        <img src="{{ site.baseurl }}/images/team/Alejandra_seria.jpeg" alt="Dr. Alejandra Tabares Pozos" class="img-fluid rounded-circle shadow-lg" style="max-width: 300px;">
       </div>
     </div>
   </div>
@@ -310,10 +324,10 @@ permalink: /
           <div class="col-lg-3 col-md-4 col-sm-6 text-center mb-4">
             {% if funder.url %}
             <a href="{{funder.url}}" target="_blank" class="funder-link">
-              <img src='/images/logos/{{ funder.image }}' alt="{{ funder.name }}" class="img-fluid funder-logo" style='max-height: 80px; max-width: 200px;'>
+              <img src='{{ site.baseurl }}/images/logos/{{ funder.image }}' alt="{{ funder.name }}" class="img-fluid funder-logo" style='max-height: 80px; max-width: 200px;'>
             </a>
             {% else %}
-            <img src='/images/logos/{{ funder.image }}' alt="{{ funder.name }}" class="img-fluid funder-logo" style='max-height: 80px; max-width: 200px;'>
+            <img src='{{ site.baseurl }}/images/logos/{{ funder.image }}' alt="{{ funder.name }}" class="img-fluid funder-logo" style='max-height: 80px; max-width: 200px;'>
             {% endif %}
           </div>
           {% endfor %}
@@ -329,7 +343,7 @@ permalink: /
     <h2 class="mb-4">Ready to Collaborate?</h2>
     <p class="lead mb-4">I'm always interested in new research collaborations and opportunities.</p>
     <div class="d-flex justify-content-center gap-3 flex-wrap">
-      <a href="/publications" class="btn btn-light btn-lg">
+      <a href="{{ site.baseurl }}/publications" class="btn btn-light btn-lg">
         <i class="fas fa-book me-2"></i>View Publications
       </a>
       <a href="mailto:a.tabaresp@uniandes.edu.co" class="btn btn-outline-light btn-lg">

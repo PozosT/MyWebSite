@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="{{ site.url }}{{ site.baseurl }}/">
-      <i class="fas fa-graduation-cap me-2"></i>{{ site.title | escape }}
+    <a class="navbar-brand fw-bold" href="{{ site.baseurl }}/">
+      <i class="fas fa-user-graduate me-2"></i>{{ site.title }}
     </a>
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,31 +11,18 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/">
+          <a class="nav-link" href="{{ site.baseurl }}/">
             <i class="fas fa-home me-1"></i>Home
           </a>
         </li>
-        {% for page in site.nav_pages %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/{{page.name}}">
-              {% case page.name %}
-                {% when 'about' %}
-                  <i class="fas fa-user me-1"></i>About
-                {% when 'publications' %}
-                  <i class="fas fa-book me-1"></i>Publications
-                {% when 'research' %}
-                  <i class="fas fa-microscope me-1"></i>Research
-                {% when 'education' %}
-                  <i class="fas fa-graduation-cap me-1"></i>Education
-                {% when 'talks' %}
-                  <i class="fas fa-presentation me-1"></i>Talks
-                {% when 'volunteering' %}
-                  <i class="fas fa-hands-helping me-1"></i>Volunteering
-                {% else %}
-                  {{page.name | capitalize }}
-              {% endcase %}
-            </a>
-          </li>
+        {% for page in site.pages %}
+          {% if page.title and page.nav != false %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}/{{page.name}}">
+                <i class="fas fa-{{ page.icon | default: 'file' }} me-1"></i>{{ page.title }}
+              </a>
+            </li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>
