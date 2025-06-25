@@ -1,0 +1,132 @@
+<!-- SEO Meta Tags -->
+<meta name="author" content="{{ site.title }}">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page.url | prepend: site.url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ page.url | prepend: site.url }}">
+<meta property="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+<meta property="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="twitter:image" content="{{ site.url }}{{ site.baseurl }}/images/twitter-image.jpg">
+<meta property="twitter:creator" content="@alejandratabares">
+<meta property="twitter:site" content="@alejandratabares">
+
+<!-- Additional SEO Meta Tags -->
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}Alejandra Tabares Pozos, Universidad de los Andes, Energy Systems, AI, Machine Learning, Optimization, Renewable Energy, Power Systems, Research, Academic{% endif %}">
+<meta name="subject" content="Academic Research in Energy Systems and AI">
+<meta name="classification" content="Academic">
+<meta name="coverage" content="Worldwide">
+<meta name="distribution" content="Global">
+<meta name="rating" content="General">
+<meta name="revisit-after" content="7 days">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ page.url | prepend: site.url }}">
+
+<!-- Language and Region -->
+<meta http-equiv="content-language" content="en">
+<meta name="geo.region" content="CO">
+<meta name="geo.placename" content="Bogotá, Colombia">
+<meta name="geo.position" content="4.7110;-74.0721">
+<meta name="ICBM" content="4.7110, -74.0721">
+
+<!-- Academic-specific meta tags -->
+<meta name="citation_author" content="Alejandra Tabares Pozos">
+<meta name="citation_author_institution" content="Universidad de los Andes">
+<meta name="citation_author_email" content="a.tabaresp@uniandes.edu.co">
+<meta name="citation_publication_date" content="{{ page.date | date: '%Y-%m-%d' }}">
+<meta name="citation_journal_title" content="{% if page.journal %}{{ page.journal }}{% else %}Academic Research{% endif %}">
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dra. Alejandra Tabares Pozos",
+  "jobTitle": "Assistant Professor",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Universidad de los Andes",
+    "url": "https://www.uniandes.edu.co"
+  },
+  "alumniOf": [
+    {
+      "@type": "Organization",
+      "name": "Universidade Estadual Paulista (UNESP)"
+    },
+    {
+      "@type": "Organization", 
+      "name": "Universidad Tecnológica de Pereira"
+    }
+  ],
+  "knowsAbout": [
+    "Energy Systems",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Optimization",
+    "Renewable Energy",
+    "Power Systems",
+    "Solar Energy Prediction"
+  ],
+  "url": "{{ site.url }}",
+  "email": "a.tabaresp@uniandes.edu.co",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bogotá",
+    "addressCountry": "CO",
+    "addressRegion": "Cundinamarca"
+  },
+  "sameAs": [
+    "https://scholar.google.com/citations?user=C9PY5CwAAAAJ&hl=en",
+    "https://www.linkedin.com/in/alejandra-tabares-pozos",
+    "https://github.com/alejandratabares"
+  ]
+}
+</script>
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Universidad de los Andes",
+  "url": "https://www.uniandes.edu.co",
+  "logo": "{{ site.url }}{{ site.baseurl }}/images/logos/uniandes-logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+57-1-339-4949",
+    "contactType": "academic"
+  }
+}
+</script>
+
+<!-- WebSite Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}",
+  "author": {
+    "@type": "Person",
+    "name": "Dra. Alejandra Tabares Pozos"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Universidad de los Andes"
+  }
+}
+</script> 

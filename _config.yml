@@ -1,8 +1,8 @@
 # Site settings
 title: Dra. Alejandra Tabares Pozos
 email: a.tabaresp@uniandes.edu.co
-description: Personal webpage of Dra. Alejandra Tabares Pozos
-baseurl: "" # Ajustado para publicación directa en GitHub Pages
+description: Personal webpage of Dra. Alejandra Tabares Pozos - Assistant Professor at Universidad de los Andes
+baseurl: "/MyWebSite" # Ajustado para el repositorio MyWebSite
 url: "https://pozost.github.io"
 affiliation: I am part of the <a href="https://industrial.uniandes.edu.co/es" target="_blank">Industrial Engineering Department</a>  at Los Andes University.
 
@@ -66,5 +66,18 @@ kramdown:
   enable_coderay: false
   parse_block_html: true # default for kramdown is false. This will enable using Markdown links
 
+# GitHub Pages configuration
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
 # Add site.baseurl to resources for better compatibility
 # Example in HTML: <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+
+# Theme settings for professional look
+theme:
+  primary_color: "#2c3e50"
+  secondary_color: "#3498db"
+  accent_color: "#e74c3c"
+  text_color: "#2c3e50"
+  background_color: "#ffffff"

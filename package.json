@@ -1,0 +1,47 @@
+{
+  "name": "alejandra-tabares-website",
+  "version": "1.0.0",
+  "description": "Personal academic website of Dra. Alejandra Tabares Pozos",
+  "main": "index.js",
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "serve": "bundle exec jekyll serve",
+    "serve-drafts": "bundle exec jekyll serve --drafts",
+    "clean": "bundle exec jekyll clean",
+    "doctor": "bundle exec jekyll doctor",
+    "test": "bundle exec htmlproofer ./_site --allow-missing-href --allow-hash-href --disable-external",
+    "optimize-images": "imagemin images/* --out-dir=images/optimized",
+    "lint": "bundle exec rubocop",
+    "deploy": "bundle exec jekyll build && git add . && git commit -m 'Deploy to GitHub Pages' && git push origin main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PozosT/MyWebSite.git"
+  },
+  "keywords": [
+    "jekyll",
+    "academic",
+    "website",
+    "research",
+    "university",
+    "energy-systems",
+    "optimization"
+  ],
+  "author": "Dra. Alejandra Tabares Pozos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PozosT/MyWebSite/issues"
+  },
+  "homepage": "https://pozost.github.io/MyWebSite",
+  "devDependencies": {
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+} 

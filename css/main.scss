@@ -3,9 +3,438 @@
     
 @import "bootstrap";
 
-$container-width: 1100px;
-$tablet-width: 600px;
-$phone-width: 480px;
+// Variables
+$container-width: 1200px;
+$tablet-width: 768px;
+$phone-width: 576px;
+
+// Color palette
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$accent-color: #e74c3c;
+$success-color: #27ae60;
+$warning-color: #f39c12;
+$info-color: #17a2b8;
+$light-color: #ecf0f1;
+$dark-color: #34495e;
+$white: #ffffff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Typography
+$font-family-sans-serif: 'Inter', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace: 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', monospace;
+
+// Shadows
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+$shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+// Border radius
+$border-radius: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+
+// Global styles
+body {
+  font-family: $font-family-sans-serif;
+  line-height: 1.7;
+  color: $gray-800;
+  background-color: $white;
+  padding-top: 80px;
+  overflow-x: hidden;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: $primary-color;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+  margin-bottom: 1.25rem;
+  color: $gray-700;
+}
+
+// Links
+a {
+  color: $secondary-color;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    color: darken($secondary-color, 15%);
+    text-decoration: none;
+  }
+}
+
+// Navigation
+.navbar {
+  background: linear-gradient(135deg, $primary-color 0%, $dark-color 100%);
+  box-shadow: $shadow;
+  padding: 1rem 0;
+  
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $white !important;
+    
+    &:hover {
+      color: $light-color !important;
+    }
+  }
+  
+  .nav-link {
+    color: rgba($white, 0.9) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.25rem;
+    border-radius: $border-radius;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: $white !important;
+      background-color: rgba($white, 0.1);
+    }
+    
+    &.active {
+      color: $white !important;
+      background-color: rgba($secondary-color, 0.2);
+    }
+  }
+}
+
+// Buttons
+.btn {
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: $border-radius;
+  transition: all 0.3s ease;
+  border: none;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, $secondary-color 0%, darken($secondary-color, 10%) 100%);
+  
+  &:hover {
+    background: linear-gradient(135deg, darken($secondary-color, 10%) 0%, darken($secondary-color, 20%) 100%);
+  }
+}
+
+.btn-outline-primary {
+  border: 2px solid $secondary-color;
+  color: $secondary-color;
+  
+  &:hover {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+}
+
+// Cards
+.card {
+  border: none;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-xl;
+  }
+  
+  .card-header {
+    background: linear-gradient(135deg, $primary-color 0%, $dark-color 100%);
+    color: $white;
+    border: none;
+    font-weight: 600;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+}
+
+// Container
+.container-fluid {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+// Hero section
+.hero-section {
+  background: linear-gradient(135deg, $primary-color 0%, $dark-color 100%);
+  color: $white;
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+  
+  h1 {
+    color: $white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  p {
+    color: rgba($white, 0.9);
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+}
+
+// Sections
+.section {
+  padding: 4rem 0;
+  
+  &.section-light {
+    background-color: $gray-100;
+  }
+  
+  &.section-dark {
+    background-color: $primary-color;
+    color: $white;
+    
+    h1, h2, h3, h4, h5, h6 {
+      color: $white;
+    }
+    
+    p {
+      color: rgba($white, 0.9);
+    }
+  }
+}
+
+// Grid system improvements
+.row {
+  margin-bottom: 2rem;
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+.col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  padding: 0 1rem;
+}
+
+// Images
+img {
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: $shadow-lg;
+  }
+}
+
+// Publications
+.publication-item {
+  background: $white;
+  border-radius: $border-radius-lg;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: $shadow-sm;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    box-shadow: $shadow;
+    transform: translateY(-2px);
+  }
+  
+  .publication-title {
+    font-weight: 600;
+    color: $primary-color;
+    margin-bottom: 0.5rem;
+  }
+  
+  .publication-authors {
+    color: $gray-600;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  .publication-venue {
+    color: $secondary-color;
+    font-weight: 500;
+  }
+}
+
+// Team members
+.team-member {
+  text-align: center;
+  margin-bottom: 2rem;
+  
+  .member-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid $light-color;
+  }
+  
+  .member-name {
+    font-weight: 600;
+    color: $primary-color;
+    margin-bottom: 0.5rem;
+  }
+  
+  .member-title {
+    color: $gray-600;
+    font-style: italic;
+  }
+}
+
+// Footer
+.footer {
+  background: linear-gradient(135deg, $primary-color 0%, $dark-color 100%);
+  color: $white;
+  padding: 3rem 0 1rem;
+  margin-top: 4rem;
+  
+  .footer-content {
+    text-align: center;
+    
+    p {
+      color: rgba($white, 0.8);
+      margin-bottom: 1rem;
+    }
+    
+    .social-links {
+      margin-top: 1.5rem;
+      
+      a {
+        color: $white;
+        font-size: 1.5rem;
+        margin: 0 0.5rem;
+        transition: all 0.3s ease;
+        
+        &:hover {
+          color: $secondary-color;
+          transform: translateY(-3px);
+        }
+      }
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: $tablet-width) {
+  body {
+    padding-top: 70px;
+  }
+  
+  .hero-section {
+    padding: 2rem 0;
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  .section {
+    padding: 2rem 0;
+  }
+  
+  .container-fluid {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: $phone-width) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+}
+
+// Utility classes
+.text-gradient {
+  background: linear-gradient(135deg, $secondary-color 0%, $accent-color 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, $primary-color 0%, $dark-color 100%);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(135deg, $secondary-color 0%, darken($secondary-color, 10%) 100%);
+}
+
+.shadow-hover {
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-xl;
+  }
+}
+
+// Animations
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+// Loading states
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+// Focus states for accessibility
+.btn:focus,
+.nav-link:focus,
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba($secondary-color, 0.25);
+  outline: none;
+}
 
 /* Fluxbox: Added for publication page columns. */
 .flex-container {

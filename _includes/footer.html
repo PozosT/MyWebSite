@@ -1,35 +1,121 @@
-<br/>
-<div id="footer" class="panel">
-  <div class="panel-footer">
-	<div class="container-fluid">
-	  <div class="row">
-		<div class="col-sm-4">
-			
-            <p>&copy {{ 'now' | date: "%Y" }} {{site.title | escape }} </p>
-
-              <p>{{ site.affiliation }}</p>
-
-		   <p>  </p><p>
-            		  
-		</div>
-
-		<div class="col-sm-4">
-            <p>{{ site.contact }}</p>
-		</div>
-
-
-		<div class="col-sm-4">
-            <p>{{ site.location }}</p>
-		</div>
-
-	  </div>
-	</div>
+<footer class="footer mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="footer-section">
+          <h5 class="text-white mb-3">
+            <i class="fas fa-user-graduate me-2"></i>About
+          </h5>
+          <p class="text-white-50">
+            {{ site.affiliation }}
+          </p>
+          <div class="social-links">
+            <a href="https://scholar.google.com/citations?user=C9PY5CwAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alejandra-tabares-pozos" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/alejandratabares" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/alejandratabares" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="footer-section">
+          <h5 class="text-white mb-3">
+            <i class="fas fa-envelope me-2"></i>Contact
+          </h5>
+          <p class="text-white-50">
+            {{ site.contact }}
+          </p>
+          <div class="contact-info">
+            <p class="text-white-50 mb-2">
+              <i class="fas fa-phone me-2"></i>+57 1 339 4949
+            </p>
+            <p class="text-white-50">
+              <i class="fas fa-clock me-2"></i>Mon-Fri: 8:00 AM - 6:00 PM
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="footer-section">
+          <h5 class="text-white mb-3">
+            <i class="fas fa-map-marker-alt me-2"></i>Location
+          </h5>
+          <p class="text-white-50">
+            {{ site.location }}
+          </p>
+          <div class="location-info">
+            <p class="text-white-50 mb-2">
+              <i class="fas fa-building me-2"></i>Edificio Mario Laserna
+            </p>
+            <p class="text-white-50">
+              <i class="fas fa-university me-2"></i>Universidad de los Andes
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <hr class="border-light my-4">
+    
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="text-white-50 mb-0">
+          &copy; {{ 'now' | date: "%Y" }} {{ site.title | escape }}. All rights reserved.
+        </p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <p class="text-white-50 mb-0">
+          <i class="fas fa-heart text-danger me-1"></i>
+          Made with passion for research and education
+        </p>
+      </div>
+    </div>
   </div>
-</div>
+</footer>
 
 <script type="text/javascript">
   // Open links from outside of the website in a new tab
   $(document.links).filter(function() {
     return this.hostname != window.location.hostname;
   }).attr('target', '_blank');
+  
+  // Smooth scroll to top functionality
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 300) {
+      $('#scroll-to-top').fadeIn();
+    } else {
+      $('#scroll-to-top').fadeOut();
+    }
+  });
+  
+  // Initialize tooltips
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
+
+<!-- Scroll to top button -->
+<button id="scroll-to-top" class="btn btn-primary position-fixed" style="bottom: 20px; right: 20px; display: none; z-index: 1000;">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+  // Scroll to top functionality
+  document.getElementById('scroll-to-top').addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 </script>
