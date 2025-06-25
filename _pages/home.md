@@ -1,8 +1,8 @@
 ---
 title: "Home"
-layout: homelay
+layout: default
 sitemap: false
-permalink: /home/
+permalink: /
 ---
 
 <div class="home-intro">
