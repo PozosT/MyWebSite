@@ -36,7 +36,7 @@ In collaboration with a doctoral project, I investigate the design and optimizat
 <div class="rowl1">
   <div class="img-responsive" style="margin-top: 15px; margin-right: 19px; float: left"><iframe src="https://www.youtube.com/embed/isjbqXs2g7k?playlist=isjbqXs2g7k&loop=1&autoplay=1&mute=1" style="width: 280px; height: 158px; border-radius: 5px" frameborder="0" allowfullscreen></iframe></div>
 
-#### Communication Between Microgrids and Data Acquisition Systems
+#### Communication Between Microgrids and Data Acquisition Systems for Microgrids
 
 Another ongoing research project focuses on communication between microgrids, enabling transactions between nano and microgrids. This work involves the development of data acquisition systems and enabling communication technologies to facilitate seamless energy exchanges. By enhancing inter-grid communication, we aim to create resilient and adaptive decentralized energy systems.
 

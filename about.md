@@ -72,7 +72,21 @@ permalink: /about/
 ## Short biography
 
 <div class="short-bio">
-Received the B.S. degree in Industrial Engineering from the Technological University of Pereira, Pereria, Colombia, in 2012, the M.Sc. and the Ph.D. degree in Electrical Engineering from the S3o Paulo State University, Ilha Solteira, Brazil, in  2015 and 2019 respectively. With experience  in applying deterministic and stochastic mathematical models, classical optimization, and combinatorial optimization to energy systems, particularly in investment and operation planning of distribution systems integrating renewable energy resources. Current research interests focus on the study of distributed energy management systems, fixed and mobile storage systems, as well as the decentralization of electricity markets integrating artificial intelligence topics. 
+Dr. Alejandra Tabares Pozos is an Assistant Professor in the Department of Industrial Engineering at the Universidad de los Andes in Bogotá, Colombia. She is an Industrial Engineer with a Ph.D. in Electrical Engineering, specializing in the application of advanced mathematical models to solve critical challenges in modern energy systems.
+
+
+Her research is centered on leveraging stochastic optimization, artificial intelligence, and reinforcement learning to address the complexities of the energy transition in Colombia and Latin America. Dr. Tabares is driven by a clear vision: to develop computational tools that not only represent a scientific breakthrough but also deliver a tangible impact. Her goal is to ensure more reliable, sustainable, and equitable access to energy for all communities, transforming the technical complexity of microgrids into practical solutions that foster social development and environmental protection.
+
+
+Dr. Tabares earned her Ph.D. and M.Sc. in Electrical Engineering from São Paulo State University (UNESP), Brazil. She completed her undergraduate studies in Industrial Engineering with honors at the Universidad Tecnológica de Pereira (UTP) in Colombia. Her postdoctoral work was conducted as a Research Assistant with the São Paulo Research Foundation (FAPESP). During her doctoral studies, she was a visiting research scholar at the University of Castilla-La Mancha in Spain.
+
+
+
+A leader in her field, Dr. Tabares heads the Renewable Energy Living Lab at Universidad de los Andes, an initiative that provides a real-world microgrid environment for validating innovative algorithms and technologies. She has also led industry-focused projects, including the co-direction of a project with the major energy company ENEL to develop a predictive and optimization algorithm for the El Paso solar plant, demonstrating the direct industrial application of her research.
+
+
+Mentorship is a cornerstone of her academic career. Dr. Tabares is committed to training the next generation of scientists, currently supervising Ph.D. students whose research is crucial for advancing microgrid management, from local energy markets to hybrid AI operational models. Her teaching portfolio includes graduate and undergraduate courses such as Optimization under Uncertainty, Probabilistic Models, Optimization in networks, Metahaueristics and Smart Microgrids.
+
 </div>
 
 {% if site.data.awards %}
