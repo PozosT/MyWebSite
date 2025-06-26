@@ -9,16 +9,16 @@ $tablet-width: 768px;
 $phone-width: 576px;
 
 // Color palette
-$primary-color: #2c3e50;
-$secondary-color: #3498db;
-$accent-color: #e74c3c;
+$primary-color: #2563eb;
+$secondary-color: #1d4ed8;
+$accent-color: #60a5fa;
 $success-color: #27ae60;
 $warning-color: #f39c12;
 $info-color: #17a2b8;
-$light-color: #ecf0f1;
-$dark-color: #34495e;
+$light-color: #f8fafc;
+$dark-color: #0f172a;
 $white: #ffffff;
-$gray-100: #f8f9fa;
+$gray-100: #f8fafc;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
 $gray-400: #ced4da;
@@ -26,7 +26,7 @@ $gray-500: #adb5bd;
 $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
-$gray-900: #212529;
+$gray-900: #1a1a1a;
 
 // Typography
 $font-family-sans-serif: 'Inter', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -47,15 +47,15 @@ $border-radius-xl: 16px;
 body {
   font-family: $font-family-sans-serif;
   line-height: 1.7;
-  color: $gray-800;
-  background-color: $white;
+  color: $gray-900;
+  background-color: $gray-100;
   padding-top: 80px;
   overflow-x: hidden;
 }
 
 // Typography
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: 700;
   color: $primary-color;
   margin-bottom: 1rem;
   line-height: 1.3;
@@ -75,13 +75,13 @@ p {
 
 // Links
 a {
-  color: $secondary-color;
+  color: $primary-color;
   text-decoration: none;
   transition: all 0.3s ease;
   
   &:hover {
-    color: darken($secondary-color, 15%);
-    text-decoration: none;
+    color: $accent-color;
+    text-decoration: underline;
   }
 }
 
@@ -155,15 +155,16 @@ a {
 
 // Cards
 .card {
-  border: none;
+  background: $white;
   border-radius: $border-radius-lg;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
   box-shadow: $shadow;
+  border: 1px solid $gray-200;
   transition: all 0.3s ease;
-  overflow: hidden;
   
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: $shadow-xl;
+    transform: translateY(-2px);
   }
   
   .card-header {
@@ -208,9 +209,10 @@ a {
 // Sections
 .section {
   padding: 4rem 0;
+  background-color: $gray-100;
   
   &.section-light {
-    background-color: $gray-100;
+    background-color: $white;
   }
   
   &.section-dark {
@@ -222,7 +224,7 @@ a {
     }
     
     p {
-      color: rgba($white, 0.9);
+      color: rgba($white, 0.95);
     }
   }
 }
@@ -256,6 +258,7 @@ img {
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   box-shadow: $shadow-sm;
+  border: 1px solid $gray-200;
   transition: all 0.3s ease;
   
   &:hover {
@@ -270,7 +273,7 @@ img {
   }
   
   .publication-authors {
-    color: $gray-600;
+    color: $gray-800;
     font-style: italic;
     margin-bottom: 0.5rem;
   }
