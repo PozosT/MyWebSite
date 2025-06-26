@@ -149,4 +149,4 @@ permalink: /education/
 
 {% endfor %}
 </div>
-{% endif %}
+{% endif %} 

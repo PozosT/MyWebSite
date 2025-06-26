@@ -72,7 +72,7 @@ permalink: /about/
 ## Short biography
 
 <div class="short-bio">
-Received the B.S. degree in Industrial Engineering from the Technological University of Pereira, Pereria, Colombia, in 2012, the M.Sc. and the Ph.D. degree in Electrical Engineering from the São Paulo State University, Ilha Solteira, Brazil, in  2015 and 2019 respectively. With experience  in applying deterministic and stochastic mathematical models, classical optimization, and combinatorial optimization to energy systems, particularly in investment and operation planning of distribution systems integrating renewable energy resources. Current research interests focus on the study of distributed energy management systems, fixed and mobile storage systems, as well as the decentralization of electricity markets integrating artificial intelligence topics. 
+Received the B.S. degree in Industrial Engineering from the Technological University of Pereira, Pereria, Colombia, in 2012, the M.Sc. and the Ph.D. degree in Electrical Engineering from the S3o Paulo State University, Ilha Solteira, Brazil, in  2015 and 2019 respectively. With experience  in applying deterministic and stochastic mathematical models, classical optimization, and combinatorial optimization to energy systems, particularly in investment and operation planning of distribution systems integrating renewable energy resources. Current research interests focus on the study of distributed energy management systems, fixed and mobile storage systems, as well as the decentralization of electricity markets integrating artificial intelligence topics. 
 </div>
 
 {% if site.data.awards %}
@@ -121,7 +121,7 @@ Received the B.S. degree in Industrial Engineering from the Technological Univer
 <div class="rowl1" style="padding-top: 10px;">
 
 {% for invited_speaker in site.data.invited_speakers %}
-{{ forloop.index }}. {% if invited_speaker.name_url %}<a href="{{ invited_speaker.name_url }}" target="_blank">{% endif %}<strong>{{ invited_speaker.name }}</strong>{% if invited_speaker.name_url %}</a>{% endif %} ({{ invited_speaker.field }}, {% if invited_speaker.institution_url %}<a href="{{ invited_speaker.institution_url }}" target="_blank">{% endif %}{{ invited_speaker.institution }}{% if invited_speaker.institution_url %}</a>{% endif %}){% if invited_speaker.venue %} – at {{ invited_speaker.venue }}{% endif %}{% if invited_speaker.date %}, {{ invited_speaker.date }}{% endif %}.
+{{ forloop.index }}. {% if invited_speaker.name_url %}<a href="{{ invited_speaker.name_url }}" target="_blank">{% endif %}<strong>{{ invited_speaker.name }}</strong>{% if invited_speaker.name_url %}</a>{% endif %} ({{ invited_speaker.field }}, {% if invited_speaker.institution_url %}<a href="{{ invited_speaker.institution_url }}" target="_blank">{% endif %}{{ invited_speaker.institution }}{% if invited_speaker.institution_url %}</a>{% endif %}){% if invited_speaker.venue %}  at {{ invited_speaker.venue }}{% endif %}{% if invited_speaker.date %}, {{ invited_speaker.date }}{% endif %}.
 {% endfor %}
 </div>
-{% endif %}
+{% endif %} 

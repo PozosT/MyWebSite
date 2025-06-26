@@ -80,4 +80,4 @@ In the future, my research will continue to explore the intersection of artifici
   <ul style="overflow: hidden">
     <li>Exploring communication strategies for multiple users in shared automated vehicles.</li>
   </ul>
-</div>
+</div> 

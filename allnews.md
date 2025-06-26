@@ -13,4 +13,4 @@ permalink: /allnews/
     <a href="{{ site.baseurl }}/news/{{ news.slug }}">{{ news.title }}</a> - {{ news.date }}
   </li>
 {% endfor %}
-</ul>
+</ul> 

@@ -67,4 +67,4 @@ permalink: /talks/
 {{ forloop.index }}. <a href="{{ site.baseurl }}{{ outreach.url | replace:'.html', '' }}" target="_blank"><strong>{{ outreach.title }}</strong></a> ({{ outreach.year }})<br/> {{outreach.event}}, {{outreach.place}}{% if workshop.online %} (online){% endif %}.
 {% endfor %}
 </div>
-{% endif %}
+{% endif %} 

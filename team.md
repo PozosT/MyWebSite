@@ -9,8 +9,6 @@ permalink: /team/
 
  **We are  looking for new PhD students, Postdocs, and Master students to join the team** [(see openings)]({{ site.baseurl }}/vacancies) **!**
 
-<!--- Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-students), [alumni](#alumni), [administrative support](#administrative-support), [lab visitors](#lab-visitors). -->
-
 ## PI
 
 {% for member in site.data.pi %}
@@ -159,5 +157,4 @@ permalink: /team/
 
 
 ## Administrative Support
-<a href="exampleemail@gmail.com">Example staff</a> is helping us (and other groups) with administration.
-
+<a href="exampleemail@gmail.com">Example staff</a> is helping us (and other groups) with administration. 

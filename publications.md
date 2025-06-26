@@ -145,5 +145,4 @@ permalink: /publications/
 
 {% endfor %}
 
-Download all papers in bib file <a href="{{ site.baseurl }}/publications/alejandratp.bib">here</a>.
-
+Download all papers in bib file <a href="{{ site.baseurl }}/publications/alejandratp.bib">here</a>. 
