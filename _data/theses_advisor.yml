@@ -1,0 +1,178 @@
+# Master's theses supervised by Dra. Alejandra Tabares Pozos
+# Programs: MIIND = Maestría en Ingeniería Industrial, MIIA = Maestría en Inteligencia Artificial
+
+- title: "Transacciones peer-to-peer y decisiones de consumo de energía para una comunidad de energía basadas en la teoría de juegos y técnicas de optimización"
+  program: MIIND
+  period: "2022-2"
+  students:
+    - "Pulido Prada, Javier Felipe"
+    - "De Ávila Bula, Ariadna Sofía"
+
+- title: "Caracterización de la dinámica del virus de dengue en la ciudad de Ibagué, Colombia y las posibles intervenciones para su control"
+  program: MIIND
+  period: "2023-1"
+  students:
+    - "Otero Acosta, Julián David"
+
+- title: "A multi-stage approach for energy management in microgrids"
+  program: MIIND
+  period: "2023-1"
+  students:
+    - "Pérez Vega, Julián Andrés"
+
+- title: "Real-time demand response in smart homes through direct lookahead approximation"
+  program: MIIND
+  period: "2023-1"
+  students:
+    - "Pico Garrido, Juan Camilo"
+
+- title: "Modelo de asignación de actividades para la extracción, almacenamiento y venta de carbón en las minas de Minercondor S.A.S."
+  program: MIIND
+  period: "2023-1"
+  students:
+    - "Reyes García, Edwin Darío"
+
+- title: "Modelo para el forecast de una plataforma de fast delivery en Colombia"
+  program: MIIND
+  period: "2023-2"
+  students:
+    - "Mejía Tovar, María Paula"
+
+- title: "Modelo de predicción de resultados de trasplante renal en Colombia: influencia de la interacción entre factores clínicos y socio-demográficos en el impacto de los desenlaces"
+  program: MIIND
+  period: "2024-1"
+  students:
+    - "Méndez Ardila, Julieth Melissa"
+
+- title: "Statistical based approach for leak detection and isolation"
+  program: MIIND
+  period: "2026-1"
+  status: "En proceso"
+  students:
+    - "Agudelo Gómez, Juan Sebastián"
+
+- title: "Optimización de un modelo estocástico para la gestión de microrredes trifásicas con integración de fuentes renovables y sistemas de almacenamiento"
+  program: MIIND
+  period: "2026-1"
+  status: "En proceso"
+  students:
+    - "Osadchaya, Olga Andreevna"
+
+- title: "Modelo predictivo para la renta de inmuebles para estancias cortas"
+  program: MIIA
+  period: "2021-2"
+  students:
+    - "Quevedo Rubio, Diego Alejandro"
+    - "Pizarro Salas, Marta Liliana"
+
+- title: "Aumento de la extracción de petróleo en el campo ocelote mediante metodologías de machine learning"
+  program: MIIA
+  period: "2021-2"
+  students:
+    - "Lara Acosta, Giovanni Daniel"
+    - "Lara Acosta, Fabian Camilo"
+    - "Garzón Parra, Heidy Tatiana"
+
+- title: "Proyección de corto plazo para el precio de bolsa de energía en el mercado colombiano"
+  program: MIIA
+  period: "2022-2"
+  students:
+    - "Urbano Burítica, Sara Nathaly"
+    - "González Pérez, Luis Fernando"
+
+- title: "Modelo de clasificación de riesgo por actos criminales a cajeros automáticos"
+  program: MIIA
+  period: "2022-2"
+  students:
+    - "Bustos Castro, Pablo Santiago"
+    - "Pérez Ríos, Andrea Julieth"
+    - "Téllez Garzón, María Paula"
+
+- title: "Extracción de información de imágenes de facturas"
+  program: MIIA
+  period: "2022-2"
+  students:
+    - "Sánchez Duarte, Laura Catharine"
+    - "Martínez Ramos, Juan Felipe"
+    - "Gallego León, Juan Sebastián"
+
+- title: "Clasificación de clientes para aumentar la efectividad de las campañas de digitalización de una entidad bancaria"
+  program: MIIA
+  period: "2022-2"
+  students:
+    - "Espitia Moreno, Cristian Javier"
+    - "Lozada Plazas, Jenny Liliana"
+    - "Urueña Pineda, Paola Andrea"
+
+- title: "Análisis y pronóstico del volumen de interfases en el transporte de hidrocarburos usando algoritmos de Machine Learning"
+  program: MIIA
+  period: "2022-2"
+  students:
+    - "Morales Rodríguez, Magda Lorena"
+    - "Barinas Guio, Jason Alejandro"
+
+- title: "Modelo de predicción del nivel de ingresos basado en modelos de procesamiento de lenguaje natural en redes sociales digitales (Twitter)"
+  program: MIIA
+  period: "2022-2"
+  students:
+    - "Sanabria Morales, Diana Carolina"
+    - "Núñez Ochoa, Laura Camila"
+    - "Peñaranda Saddy, Camilo Andrés"
+
+- title: "Predicción de la irradiación solar a corto plazo utilizando imágenes satelitales de GOES 16"
+  program: MIIA
+  period: "2023-2"
+  students:
+    - "Velasco Pérez, Juan Sebastián"
+    - "Carmona García, Camilo Andrés"
+    - "Varela Joven, Juan Fernando"
+
+- title: "Modelo predictivo de probabilidad de retención en seguro de automóviles"
+  program: MIIA
+  period: "2023-2"
+  students:
+    - "Rojas Salas, Stephanie Andrea"
+    - "Caballero Ortiz, Stephanie Andrea"
+
+- title: "Metodología para la caracterización de la movilidad individual en carro, moto y caminando en Bogotá"
+  program: MIIA
+  period: "2024-2"
+  students:
+    - "Andrade Pérez, Camilo José"
+
+- title: "Optimización del modelo de tarifación y su impacto en la exposición de riesgo del Fondo Nacional de Garantías (FNG S.A.)"
+  program: MIIA
+  period: "2024-2"
+  students:
+    - "Dimey Manrique, Juan Guillermo"
+    - "Sánchez Meneses, Sebastián Gilberto"
+    - "Cáceres García, Nicolás Felipe"
+    - "Uribe Hidalgo, Carlos Andrés"
+
+- title: "Optimización de precios de compra de leche: un enfoque de Programación Dinámica Estocástica y Aprendizaje por Refuerzo Profundo"
+  program: MIIA
+  period: "2025-2"
+  students:
+    - "Gallo Robayo, Daniel Felipe"
+    - "Castro Gutiérrez, Óscar Felipe"
+
+- title: "Inteligencia artificial en QNT: desarrollo de un Bot para el análisis de buenas prácticas en la comunicación y la mejora de la negociación"
+  program: MIIA
+  period: "2025-2"
+  students:
+    - "Cruz Moreno, José David"
+    - "Guerrero Vera, Laura Marcela"
+
+- title: "Predicción espacio-temporal de demanda de servicios para la empresa Alfred"
+  program: MIIA
+  period: "2025-2"
+  students:
+    - "Martínez Beltrán, María Alejandra"
+    - "Quiroga Sánchez, Ana María"
+
+- title: "Predicción de la irradiancia horizontal global a corto plazo: aplicación con CNN y LSTM"
+  program: MIIA
+  period: "2025-2"
+  students:
+    - "Guavita Peralta, Juan Camilo"
+    - "Romero Mora, Germán Santiago"

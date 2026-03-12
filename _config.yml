@@ -26,6 +26,7 @@ nav_pages:
   - name: publications
   - name: research
   - name: education
+  - name: students
   - name: talks
 
 # Do you want to group your publications by year? {true/false}

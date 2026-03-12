@@ -1,0 +1,108 @@
+# Master's theses where Dra. Alejandra Tabares Pozos served as jury/examiner
+# Programs: MIIND = Maestría en Ingeniería Industrial, MIIA = Maestría en Inteligencia Artificial
+
+- title: "Analysis of the value added from improving contact-center response time in a customer service application"
+  program: MIIND
+  period: "2022-1"
+  students:
+    - "Cepeda Vega, Andrés Felipe"
+
+- title: "Estudio del problema de empaquetamiento de mercancía considerando estabilidad dinámica"
+  program: MIIND
+  period: "2022-1"
+  students:
+    - "Montes Franco, Ana María"
+
+- title: "Diseño y aplicación de una metaheurística integrada para el problema conjunto de packing y picking en una empresa de logística colombiana"
+  program: MIIND
+  period: "2022-1"
+  students:
+    - "Romero Silva, Andrés Felipe"
+
+- title: "Evaluación del efecto de los tiempos de semáforos sobre la longitud de las colas y tiempos de tránsito de los vehículos en las diferentes rutas de acceso y salida en intersecciones viales"
+  program: MIIND
+  period: "2022-1"
+  students:
+    - "Velandia Prieto, David Andrés"
+
+- title: "Aplicación de modelos estadísticos y estocásticos para pronosticar la evolución del precio de criptomonedas"
+  program: MIIND
+  period: "2022-2"
+  students:
+    - "Pérez Pérez, Julián Camilo"
+
+- title: "Effects of air pollution and meteorological conditions on acute respiratory infections in Bogotá, Colombia"
+  program: MIIND
+  period: "2023-2"
+  students:
+    - "Ospina Durán, María Carolina"
+
+- title: "Optimal design for electricity auctions: a deep learning approach"
+  program: MIIND
+  period: "2024-1"
+  students:
+    - "Cepeda Vega, Valentina"
+
+- title: "Privacy preserving anomaly detection in time series data with Differential Privacy"
+  program: MIIND
+  period: "2024-2"
+  students:
+    - "Prada Latorre, Juan Diego"
+
+- title: "Implementación heurística en el problema de programación de máquinas paralelas en la operación de acarreo de material minero"
+  program: MIIND
+  period: "2024-2"
+  students:
+    - "Torres Palomino, Juan Diego"
+
+- title: "Automatización inteligente del desestibado de mercancías en entornos industriales"
+  program: MIIND
+  period: "2025-1"
+  students:
+    - "Bermúdez Gutiérrez, Isabella"
+    - "Cervantes Forero, Isabella María"
+
+- title: "Cubicaje manual asistido mediante realidad aumentada"
+  program: MIIND
+  period: "2025-1"
+  students:
+    - "Rondón Usma, Angie Valeria"
+
+- title: "Assessment of data privatization methods under local differential privacy in the banking sector"
+  program: MIIND
+  period: "2025-2"
+  students:
+    - "López Ardila, Laura Valentina"
+
+- title: "Fairness and utility in differentially private Bayesian networks"
+  program: MIIND
+  period: "2025-2"
+  students:
+    - "Urango Llorente, María Gabriela"
+
+- title: "Desarrollo y validación de un modelo eléctrico colombiano en PyPSA: aplicación a escenarios de generación, demanda y tecnologías emergentes con enfoque en FNCER"
+  program: MIIND
+  period: "2026-1"
+  status: "En proceso"
+  students:
+    - "Moreno Sotomonte, Juan David"
+
+- title: "Modelos predictivos para la gestión de cobranza y retención de clientes en el sector seguros: predicción y priorización para una gestión de cartera más efectiva"
+  program: MIIA
+  period: "2025-2"
+  students:
+    - "Castro Galindo, Javier Mauricio"
+
+- title: "Modelos RFM y Conformal Prediction para la predicción temprana de clientes de alto valor en una reconocida empresa de ropa y calzado deportivo"
+  program: MIIA
+  period: "2025-2"
+  students:
+    - "Medina Lara, José David"
+    - "Perilla Sandoval, Francisco Javier"
+    - "Vela Salcedo, Daniel Alejandro"
+
+- title: "Propuesta de análisis bibliográfico en el marco de la Alfabetización Mediática e Informacional: una visión desde análisis de texto"
+  program: MIIA
+  period: "2022-2"
+  students:
+    - "Villada, Juan David"
