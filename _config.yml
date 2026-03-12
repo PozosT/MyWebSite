@@ -70,6 +70,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Add site.baseurl to resources for better compatibility
 # Example in HTML: <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
