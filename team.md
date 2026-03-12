@@ -1,160 +1,104 @@
 ---
 title: "Team"
-layout: team
+layout: gridlay
 sitemap: false
 permalink: /team/
 ---
 
 # Team
 
- **We are  looking for new PhD students, Postdocs, and Master students to join the team** [(see openings)]({{ site.baseurl }}/vacancies) **!**
-
-## PI
-
 {% for member in site.data.pi %}
-
-<div class="row">
-  <img src="{{ site.baseurl }}/images/team/{{ member.photo }}" class="img-responsive" width="18%" style="float: left" />
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.info }}</i><br>
-
-  {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a> {% endif %}
-  {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a> {% endif %}
-  {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a> {% endif %}
-  {% if member.cv %} <a href="{{ member.cv }}" target="_blank"><i class="ai ai-cv-square ai-2x"></i></a> {% endif %}
-  {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-2x"></i></a> {% endif %}
-  {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-2x"></i></a> {% endif %}
-  <ul style="overflow: hidden">
-
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  <li> {{ member.education5 }} </li>
-  <li> {{ member.education6 }} </li>
-
-  </ul>
+<div class="team-pi-card">
+  <div class="team-pi-photo">
+    <img src="{{ site.baseurl }}/images/team/{{ member.photo-large | default: member.photo-small }}" alt="{{ member.name }}" />
+  </div>
+  <div class="team-pi-info">
+    <h3 class="team-pi-name">{{ member.name }}</h3>
+    <p class="team-pi-role">{{ member.info }}</p>
+    <div class="team-pi-links">
+      {% if member.email %}<a href="mailto:{{ member.email }}" title="Email"><i class="fas fa-envelope fa-lg"></i></a>{% endif %}
+      {% if member.scholar %}<a href="{{ member.scholar }}" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar-square ai-lg"></i></a>{% endif %}
+      {% if member.orcid %}<a href="{{ member.orcid }}" target="_blank" title="ORCID"><i class="ai ai-orcid-square ai-lg"></i></a>{% endif %}
+      {% if member.linkedin %}<a href="{{ member.linkedin }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>{% endif %}
+      {% if member.github %}<a href="{{ member.github }}" target="_blank" title="GitHub"><i class="fab fa-github fa-lg"></i></a>{% endif %}
+      {% if member.researchgate %}<a href="{{ member.researchgate }}" target="_blank" title="ResearchGate"><i class="ai ai-researchgate-square ai-lg"></i></a>{% endif %}
+    </div>
+    <ul class="team-pi-edu">
+      {% if member.education1 %}<li>{{ member.education1 }}</li>{% endif %}
+      {% if member.education2 %}<li>{{ member.education2 }}</li>{% endif %}
+      {% if member.education3 %}<li>{{ member.education3 }}</li>{% endif %}
+      {% if member.education4 %}<li>{{ member.education4 }}</li>{% endif %}
+      {% if member.education5 %}<li>{{ member.education5 }}</li>{% endif %}
+      {% if member.education6 %}<li>{{ member.education6 }}</li>{% endif %}
+    </ul>
+  </div>
 </div>
-
 {% endfor %}
 
-
-## Current Students and Postdocs
-{% assign number_printed = 0 %}
-{% for member in site.data.team_members %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-
-{% if even_odd == 0 %}
-<div class="row">
-{% endif %}
-
-<div class="col-sm-6 clearfix">
-  <img src="{{ site.baseurl }}/images/team/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.info }}<br></i>
-
-  {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a> {% endif %}
-  {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a> {% endif %}
-  {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a> {% endif %}
-  {% if member.cv %} <a href="{{ member.cv }}" target="_blank"><i class="ai ai-cv-square ai-2x"></i></a> {% endif %}
-  {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-2x"></i></a> {% endif %}
-  {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-2x"></i></a> {% endif %}
-  <ul style="overflow: hidden">
-
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 3 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 4 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 5 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  <li> {{ member.education5 }} </li>
-  {% endif %}
-
-  </ul>
-</div>
-
-{% assign number_printed = number_printed | plus: 1 %}
-
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-{% endfor %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-
-## Alumni
-
-{% assign number_printed = 0 %}
-{% for member in site.data.alumni_members %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-
-{% if even_odd == 0 %}
-<div class="row">
-{% endif %}
-
-<div class="col-sm-6 clearfix">
-  <img src="{{ site.baseurl }}/images/team/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.duration }} <br> Role: {{ member.info }}</i>
-  <ul style="overflow: hidden">
-
-  </ul>
-</div>
-
-{% assign number_printed = number_printed | plus: 1 %}
-
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-{% endfor %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-
-{% if site.data.alumni_visitors %}
-## Former M.S./B.S Students, Visitors
-<div class="row">
-<div class="col-sm-6 clearfix">
-{% for member in site.data.alumni_visitors %}
-{{ member.name }}
-{% endfor %}
-</div>
-</div>
-{% endif %}
-
-
-
-## Administrative Support
-<a href="exampleemail@gmail.com">Example staff</a> is helping us (and other groups) with administration. 
+<style>
+.team-pi-card {
+  display: flex;
+  gap: 2rem;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+.team-pi-photo {
+  flex-shrink: 0;
+}
+.team-pi-photo img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #eaf0fb;
+}
+.team-pi-info {
+  flex: 1;
+  min-width: 0;
+}
+.team-pi-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #2c3e50;
+  margin: 0 0 0.2rem 0;
+}
+.team-pi-role {
+  font-size: 0.95rem;
+  color: #6c757d;
+  font-style: italic;
+  margin-bottom: 0.9rem;
+}
+.team-pi-links {
+  display: flex;
+  gap: 0.65rem;
+  margin-bottom: 1.1rem;
+  flex-wrap: wrap;
+}
+.team-pi-links a {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+.team-pi-links a:hover { color: #3498db; }
+.team-pi-edu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.team-pi-edu li {
+  font-size: 0.87rem;
+  color: #495057;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #f8f9fa;
+  line-height: 1.5;
+}
+.team-pi-edu li:last-child { border-bottom: none; }
+@media (max-width: 640px) {
+  .team-pi-card { flex-direction: column; gap: 1.25rem; }
+  .team-pi-photo img { width: 120px; height: 120px; }
+}
+</style>

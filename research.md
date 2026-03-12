@@ -7,77 +7,159 @@ permalink: /research/
 
 # Research
 
-<div class="rowl1">
-  <img src="{{ site.baseurl }}/images/research/microgrid_operations.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
-
-#### Reinforcement Learning and Quantum Optimization for Microgrid Operations
-
-I am currently engaged in research on microgrid operations, where we explore advanced methodologies such as reinforcement learning, stochastic dynamic programming, and quantum optimization. My research focused on these topics, using a three-phase representation of the electrical grid and integrating high penetration levels of renewable energy sources. This research aims to develop optimal strategies for microgrid management under uncertainty, improving system stability and efficiency.
-
-<div class="row" style="text-align:center; margin-bottom: 0px;">
-  <iframe style="display:inline-block; border-radius: 5px; border:0px solid #FFF; width: 97%; height: 358px" src="https://www.youtube.com/embed/W2VWLYnTYrM?playlist=W2VWLYnTYrM&loop=1&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+<div class="res-hero">
+  <p>My research sits at the intersection of <strong>stochastic optimization</strong>, <strong>artificial intelligence</strong>, and <strong>energy systems engineering</strong>, with a focus on the energy transition in Colombia and Latin America. I develop computational tools that deliver tangible impact — ensuring more reliable, sustainable, and equitable access to energy.</p>
 </div>
 
-<ul style="overflow: hidden">
-</ul>
+<div class="res-grid">
+
+  <div class="res-card">
+    <div class="res-card-icon"><i class="fas fa-bolt"></i></div>
+    <div class="res-card-body">
+      <h4>Reinforcement Learning and Quantum Optimization for Microgrid Operations</h4>
+      <p>Advanced methodologies for microgrid operations using reinforcement learning, stochastic dynamic programming, and quantum optimization. Research uses a three-phase representation of the electrical grid with high penetration of renewable energy sources, developing optimal management strategies under uncertainty to improve system stability and efficiency.</p>
+      <div class="res-tags">
+        <span class="res-tag">Reinforcement Learning</span>
+        <span class="res-tag">Stochastic Optimization</span>
+        <span class="res-tag">Microgrids</span>
+        <span class="res-tag">Quantum Computing</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="res-card">
+    <div class="res-card-icon"><i class="fas fa-exchange-alt"></i></div>
+    <div class="res-card-body">
+      <h4>Local Energy Markets and Peer-to-Peer Transactions</h4>
+      <p>Design and optimization of local energy markets enabling peer-to-peer (P2P) transactions and collaborative systems with implicit information sharing among participants in subtransmission systems. Research focuses on how peers can collaborate implicitly to maintain optimal utilization of the electrical grid, ensuring efficiency and reliability in distributed energy systems.</p>
+      <div class="res-tags">
+        <span class="res-tag">Game Theory</span>
+        <span class="res-tag">Energy Markets</span>
+        <span class="res-tag">P2P Transactions</span>
+        <span class="res-tag">Distribution Systems</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="res-card">
+    <div class="res-card-icon"><i class="fas fa-network-wired"></i></div>
+    <div class="res-card-body">
+      <h4>Communication Between Microgrids and Data Acquisition Systems</h4>
+      <p>Ongoing research on inter-microgrid communication enabling transactions between nano and microgrids. This work involves development of data acquisition systems and enabling communication technologies to facilitate seamless energy exchanges — creating resilient and adaptive decentralized energy systems.</p>
+      <div class="res-tags">
+        <span class="res-tag">IoT</span>
+        <span class="res-tag">Data Acquisition</span>
+        <span class="res-tag">Decentralized Systems</span>
+        <span class="res-tag">SCADA</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="res-card">
+    <div class="res-card-icon"><i class="fas fa-solar-panel"></i></div>
+    <div class="res-card-body">
+      <h4>Renewable Energy Integration and Three-Phase Grid Representations</h4>
+      <p>Integration of renewable energy into microgrids using a detailed three-phase electrical grid representation. This work addresses the challenges of incorporating distributed energy resources — solar and wind power — into traditional grid operations, demonstrating significant improvements in grid reliability and efficiency through advanced optimization techniques.</p>
+      <div class="res-tags">
+        <span class="res-tag">Solar Energy</span>
+        <span class="res-tag">Wind Energy</span>
+        <span class="res-tag">Distribution Networks</span>
+        <span class="res-tag">Reliability</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="res-card">
+    <div class="res-card-icon"><i class="fas fa-compass"></i></div>
+    <div class="res-card-body">
+      <h4>Future Directions</h4>
+      <p>Future research will continue to explore the intersection of artificial intelligence, optimization, and energy systems. Key areas include real-time microgrid operations with reinforcement learning, development of collaborative energy markets, advancing communication capabilities of decentralized energy systems, and digital twin frameworks for renewable energy plants.</p>
+      <div class="res-tags">
+        <span class="res-tag">Artificial Intelligence</span>
+        <span class="res-tag">Digital Twins</span>
+        <span class="res-tag">Energy Transition</span>
+        <span class="res-tag">Latin America</span>
+      </div>
+    </div>
+  </div>
+
 </div>
 
-<div class="rowl1">
-  <div class="img-responsive" style="margin-top: 15px; margin-right: 19px; float: left"><iframe src="https://www.youtube.com/embed/ZroKe9dKQvs?playlist=ZroKe9dKQvs&loop=1&autoplay=1&mute=1" style="width: 280px; height: 158px; border-radius: 5px" frameborder="0" allowfullscreen></iframe></div>
+<style>
+/* Research hero */
+.res-hero {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.res-hero strong { color: #fff; }
 
-#### Local Energy Markets and Peer-to-Peer Transactions
-
-In collaboration with a doctoral project, I investigate the design and optimization of local energy markets. These markets enable peer-to-peer (P2P) transactions and collaborative systems with implicit information sharing among participants in subtransmission systems. Our research focuses on how peers can collaborate implicitly to maintain optimal utilization of the electrical grid, ensuring efficiency and reliability in distributed energy systems.
-
-<ul style="overflow: hidden">
-</ul>
-</div>
-
-<div class="rowl1">
-  <div class="img-responsive" style="margin-top: 15px; margin-right: 19px; float: left"><iframe src="https://www.youtube.com/embed/isjbqXs2g7k?playlist=isjbqXs2g7k&loop=1&autoplay=1&mute=1" style="width: 280px; height: 158px; border-radius: 5px" frameborder="0" allowfullscreen></iframe></div>
-
-#### Communication Between Microgrids and Data Acquisition Systems for Microgrids
-
-Another ongoing research project focuses on communication between microgrids, enabling transactions between nano and microgrids. This work involves the development of data acquisition systems and enabling communication technologies to facilitate seamless energy exchanges. By enhancing inter-grid communication, we aim to create resilient and adaptive decentralized energy systems.
-
-<ul style="overflow: hidden">
-</ul>
-</div>
-
-<div class="rowl1">
-  <img src="{{ site.baseurl }}/images/research/renewable_energy_integration.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
-
-#### Renewable Energy Integration and Three-Phase Grid Representations
-
-My doctoral research included the integration of renewable energy into microgrids using a detailed three-phase representation of the electrical grid. This work addressed the challenges of incorporating distributed energy resources, such as solar and wind power, into traditional grid operations. Our research demonstrated the potential for significant improvements in grid reliability and efficiency through advanced optimization techniques.
-
-<ul style="overflow: hidden">
-</ul>
-</div>
-
-<div class="rowl1">
-  <img src="{{ site.baseurl }}/images/research/local_energy_markets.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
-
-#### Future Directions
-
-In the future, my research will continue to explore the intersection of artificial intelligence, optimization, and energy systems. Key areas include the application of reinforcement learning for real-time microgrid operations, the development of collaborative energy markets, and advancing the communication capabilities of decentralized energy systems. By addressing these challenges, we aim to create sustainable and efficient energy solutions for the future.
-
-<ul style="overflow: hidden">
-</ul>
-</div>
-
-<div class="rowl1">
-  <img src="{{ site.baseurl }}/images/research/auditory_feedback_ad.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
-  <h4>Auditory feedback in advanced driver assistance systems</h4>
-  <ul style="overflow: hidden">
-    <li>Research on the use of auditory feedback to improve driver performance and safety.</li>
-  </ul>
-</div>
-
-<div class="rowl1">
-  <img src="{{ site.baseurl }}/images/research/multi_user_communication.jpg" class="img-responsive" style="float: left; border-radius: 5px; width: 280px;" />
-  <h4>Multi-user communication in automated vehicles</h4>
-  <ul style="overflow: hidden">
-    <li>Exploring communication strategies for multiple users in shared automated vehicles.</li>
-  </ul>
-</div> 
+/* Research cards grid */
+.res-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.res-card {
+  display: flex;
+  gap: 1.25rem;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-left: 4px solid #3498db;
+  border-radius: 0 10px 10px 0;
+  padding: 1.4rem 1.5rem;
+  transition: box-shadow 0.2s, border-left-color 0.2s;
+}
+.res-card:hover {
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  border-left-color: #2c3e50;
+}
+.res-card-icon {
+  flex-shrink: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: #eaf0fb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #3498db;
+  margin-top: 0.1rem;
+}
+.res-card-body h4 {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 0.45rem 0;
+}
+.res-card-body p {
+  font-size: 0.88rem;
+  color: #495057;
+  line-height: 1.65;
+  margin-bottom: 0.7rem;
+}
+.res-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.res-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: #eaf0fb;
+  color: #1e40af;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+@media (max-width: 576px) {
+  .res-card { flex-direction: column; gap: 0.65rem; }
+  .res-card-icon { width: 2rem; height: 2rem; font-size: 0.85rem; }
+}
+</style>

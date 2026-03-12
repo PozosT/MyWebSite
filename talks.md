@@ -5,66 +5,150 @@ sitemap: false
 permalink: /talks/
 ---
 
-# Chairing duties for conferences
-
-{% if site.data.chairing_autoui %}
-## AutoUI
-<div class="rowl1" style="padding-top: 10px;">
-
-{% for session in site.data.chairing_autoui %}
-{{ forloop.index }}. {% if session.link %}<a href="{{ session.link }}" target="_blank">{% endif %}<strong>{{ session.title }}</strong>{% if session.link %}</a>{% endif %} ({{ session.year }}) – {{ session.location }}.{% if session.subtitle %}</br>{{ session.subtitle }}{% endif %}
-{% endfor %}
-</div>
-{% endif %}
-
-# Talks
+# Talks & Outreach
 
 {% if site.data.conference_talks %}
-## Conference presentations
-<div class="rowl1" style="padding-top: 10px;">
-
-{% for talk in site.data.conference_talks %}
-{{ forloop.index }}. <strong>{{ talk.title }}</strong> <br/> <i>{{ talk.authors }}</i>, {{ talk.conf }} ({{ talk.year }}).
+<div class="tlk-section-label"><i class="fas fa-chalkboard me-2"></i>Conference Presentations</div>
+<ol class="tlk-list">
+{% assign sorted_conf = site.data.conference_talks | sort: 'year' | reverse %}
+{% for talk in sorted_conf %}
+  <li class="tlk-item">
+    <div class="tlk-title">{{ talk.title }}</div>
+    <div class="tlk-meta">
+      <span class="tlk-authors">{{ talk.authors }}</span>
+      <span class="tlk-sep">·</span>
+      <span class="tlk-conf">{{ talk.conf }}</span>
+      <span class="tlk-year">({{ talk.year }})</span>
+    </div>
+  </li>
 {% endfor %}
-</div>
+</ol>
 {% endif %}
 
 {% if site.data.invited_talks %}
-## Talks and webinars
-<div class="rowl1" style="padding-top: 10px;">
-
-{% for talk in site.data.invited_talks %}
-{{ forloop.index }}. {% if talk.link %}<a href="{{ talk.link }}" target="_blank">{% endif %}<strong>{{ talk.title }}</strong>{% if talk.link %}</a>{% endif %} ({{ talk.year }}){% if talk.subtitle %}<br>{{ talk.subtitle }}{% endif %}.
+<div class="tlk-section-label" style="margin-top:2rem"><i class="fas fa-microphone-alt me-2"></i>Invited Talks & Webinars</div>
+<ol class="tlk-list">
+{% assign sorted_inv = site.data.invited_talks | sort: 'year' | reverse %}
+{% for talk in sorted_inv %}
+  <li class="tlk-item">
+    <div class="tlk-title">{% if talk.link %}<a href="{{ talk.link }}" target="_blank">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}</div>
+    {% if talk.subtitle %}<div class="tlk-subtitle">{{ talk.subtitle }}</div>{% endif %}
+    <div class="tlk-meta"><span class="tlk-year">({{ talk.year }})</span></div>
+  </li>
 {% endfor %}
-</div>
+</ol>
 {% endif %}
 
 {% if site.data.chairing_sessions %}
-## Chairing sessions
-<div class="rowl1" style="padding-top: 10px;">
-
-{% for session in site.data.chairing_sessions %}
-{{ forloop.index }}. {% if session.link %}<a href="{{ session.link }}" target="_blank">{% endif %}<strong>{{ session.title }}</strong>{% if session.link %}</a>{% endif %} ({{ session.year }}){% if session.subtitle %} {{ session.subtitle }}{% endif %}<br/>{{ session.conf }}.
+<div class="tlk-section-label" style="margin-top:2rem"><i class="fas fa-clipboard-list me-2"></i>Chairing Sessions</div>
+<ol class="tlk-list">
+{% assign sorted_chair = site.data.chairing_sessions | sort: 'year' | reverse %}
+{% for session in sorted_chair %}
+  <li class="tlk-item">
+    <div class="tlk-title">{% if session.link %}<a href="{{ session.link }}" target="_blank">{{ session.title }}</a>{% else %}{{ session.title }}{% endif %}</div>
+    <div class="tlk-meta">
+      <span class="tlk-conf">{{ session.conf }}</span>
+      <span class="tlk-year">({{ session.year }})</span>
+    </div>
+  </li>
 {% endfor %}
-</div>
+</ol>
 {% endif %}
 
-{% if site.workshops %}
-## Workshops
-<div class="rowl1" style="padding-top: 10px;">
-
-{% for workshop in site.workshops %}
-{{ forloop.index }}. <a href="{{ site.baseurl }}{{ workshop.url | replace:'.html', '' }}" target="_blank"><strong>{{ workshop.title }}</strong></a> ({{ workshop.year }})<br/> {{workshop.conf}}, {{workshop.place}}{% if workshop.online %} (online){% endif %}.
-{% endfor %}
+{% unless site.data.conference_talks or site.data.invited_talks or site.data.chairing_sessions %}
+<div class="tlk-empty">
+  <i class="fas fa-microphone-slash fa-2x mb-3" style="color:#dee2e6"></i>
+  <p>Talks and presentations will be listed here soon.</p>
 </div>
-{% endif %}
+{% endunless %}
 
-{% if site.data.outreach %}
-## Outreach activities
-<div class="rowl1" style="padding-top: 10px;">
-
-{% for outreach in site.data.outreach %}
-{{ forloop.index }}. <a href="{{ site.baseurl }}{{ outreach.url | replace:'.html', '' }}" target="_blank"><strong>{{ outreach.title }}</strong></a> ({{ outreach.year }})<br/> {{outreach.event}}, {{outreach.place}}{% if workshop.online %} (online){% endif %}.
-{% endfor %}
-</div>
-{% endif %} 
+<style>
+.tlk-section-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6c757d;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e9ecef;
+}
+.tlk-list {
+  list-style: none;
+  counter-reset: tlk-counter;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.tlk-item {
+  counter-increment: tlk-counter;
+  padding: 0.9rem 1rem 0.9rem 3.2rem;
+  position: relative;
+  border-bottom: 1px solid #f1f3f5;
+  transition: background 0.15s;
+}
+.tlk-item:last-child { border-bottom: none; }
+.tlk-item:hover { background: #f8f9fa; }
+.tlk-item::before {
+  content: counter(tlk-counter);
+  position: absolute;
+  left: 0.65rem;
+  top: 0.9rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #eaf0fb;
+  color: #2c3e50;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tlk-title {
+  font-size: 0.93rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+  line-height: 1.45;
+}
+.tlk-title a { color: #2c3e50; text-decoration: none; }
+.tlk-title a:hover { color: #3498db; text-decoration: underline; }
+.tlk-subtitle {
+  font-size: 0.83rem;
+  color: #6c757d;
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+.tlk-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+.tlk-authors {
+  font-size: 0.8rem;
+  color: #495057;
+  font-style: italic;
+}
+.tlk-sep { color: #dee2e6; font-size: 0.75rem; }
+.tlk-conf {
+  font-size: 0.78rem;
+  color: #6c757d;
+}
+.tlk-year {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+.tlk-empty {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #9ca3af;
+  font-size: 0.9rem;
+  border: 1px dashed #dee2e6;
+  border-radius: 10px;
+}
+</style>
