@@ -1,0 +1,100 @@
+# Undergraduate (PG2) theses supervised by Dra. Alejandra Tabares Pozos
+# Program: Ingeniería Industrial, Universidad de los Andes
+# Grade scale: 1.0 - 5.0
+
+- title: "Planificación optimizada de la distribución de suero antiofídico en Colombia bajo una producción centralizada en Bogotá"
+  period: "2022-2"
+  co_advisor: "Mauricio Santos Vega y Carlos Bravo Vega"
+  students:
+    - "Rodríguez García, Nicolás"
+
+- title: "Modelo multiperiodo de planeación de la expansión a largo plazo de sistemas de distribución energética considerando tópicos avanzados de fiabilidad"
+  period: "2022-2"
+  co_advisor: "Ana María Montes Franco"
+  students:
+    - "Infante Trillos, Julián Andrés"
+
+- title: "Herramientas de optimización para ubicación de estaciones de servicio eléctricas en Bogotá"
+  period: "2023-1"
+  students:
+    - "Cobos Carranza, Nicolás"
+
+- title: "Proceso de decisión multicriterio para la instalación de estaciones de carga de vehículos eléctricos en Bogotá, Colombia"
+  period: "2023-1"
+  students:
+    - "Medina Cáceres, Sergio Andrés"
+
+- title: "Implementación y análisis de aprendizaje por refuerzo aplicado al funcionamiento de un parqueadero privado de vehículos eléctricos"
+  period: "2023-2"
+  students:
+    - "Restrepo Jurado, Juan Nicolás"
+    - "Gutiérrez Sánchez, David Esteban"
+
+- title: "Análisis comparativo de métodos de optimización de portafolio: Algoritmo genético, evolutivo diferencial y mínima varianza dentro de la crisis de mercados de 2020 en el contexto de renta variable colombiano"
+  period: "2023-2"
+  students:
+    - "Valbuena Sánchez, Juan Diego"
+
+- title: "Planificación de proyectos de software utilizando algoritmos genéticos"
+  period: "2023-2"
+  students:
+    - "Valbuena Osorio, Juan Diego"
+
+- title: "Predicción de la irradiación solar a corto plazo utilizando imágenes de cielo abierto recopiladas en la planta fotovoltaica El Paso de la empresa ENEL"
+  period: "2023-2"
+  students:
+    - "Ruiz López, Daniela Andrea"
+
+- title: "Algoritmo basado en aprendizaje por refuerzo para planificar la operación anticipada de una Microred en entornos urbanos"
+  period: "2023-2"
+  students:
+    - "Tovar Macías, Sergio"
+
+- title: "Pronóstico de irradiancia solar intra-diario utilizando datos meteorológicos y satelitales (GOES-16) por redes neuronales"
+  period: "2024-1"
+  students:
+    - "Parra Rojas, Juan Pablo"
+
+- title: "Control energético para microrredes: optimización operativa mediante política Rolling Horizon para redes monofásicas"
+  period: "2024-2"
+  students:
+    - "Melo Camacho, Santiago Nicolás"
+
+- title: "Uso de Deep Learning para predecir la irradiancia a través del reconocimiento de imágenes satelitales: caso planta fotovoltaica El Paso en el Cesar"
+  period: "2024-2"
+  students:
+    - "López Ortiz, Juan Felipe"
+
+- title: "Creación de un ambiente para pruebas de un modelo de machine learning para optimizar el consumo eléctrico de una red"
+  period: "2024-2"
+  students:
+    - "Beltrán Gómez, Sergio Andrés"
+
+- title: "Semáforos inteligentes: uso del aprendizaje por refuerzo en redes de tráfico urbano"
+  period: "2025-1"
+  students:
+    - "Beltrán Contreras, Andrés Leonardo"
+    - "Quiñones Calderón, Juan David"
+
+- title: "Comparación de arquitecturas de redes neuronales para pronóstico de generación solar en el contexto colombiano"
+  period: "2025-2"
+  students:
+    - "Ladino Nieto, Esteban"
+
+- title: "Análisis espectral de robustez en redes complejas"
+  period: "2025-2"
+  co_advisor: "Pablo Medina"
+  students:
+    - "Prada Amaya, Juan David"
+    - "Acosta Muriel, Sofía"
+
+- title: "Modelo de apoyo a la decisión en la asignación de conductores de ALFRED para la maximización de su utilización"
+  period: "2025-2"
+  students:
+    - "Núñez Castellanos, Sergio Andrés"
+    - "Gutiérrez Copete, Jerónimo"
+
+- title: "Multi-Agent Evolution for electric vehicle charging systems: A Scatter search approach to breeding specialized DQN Agents"
+  period: "2025-2"
+  students:
+    - "Acosta Bernal, Tomás"
