@@ -7,7 +7,7 @@ pdf: zandrazavi2021hybrid
 image: zandrazavi2021hybrid.jpg
 display: 2021 IEEE International Conference on Environment and Electrical Engineering
 year: 2021
-doi: 
+doi: 10.1109/eeeic/icpseurope51590.2021.9584585
 code: 
 suppmat: 
 abstract: "A hybrid model combining stochastic programming and information gap decision theory for managing uncertainties in renewable generation and energy demand within microgrids."

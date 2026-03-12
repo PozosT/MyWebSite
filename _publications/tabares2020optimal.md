@@ -7,7 +7,7 @@ pdf: tabares2020optimal
 image: tabares2020optimal.jpg
 display: Energies
 year: 2020
-doi: 
+doi: 10.3390/en13226037
 code: 
 suppmat: 
 abstract: "This paper investigates optimal sizing of battery and photovoltaic microgrids for auxiliary services in substations during contingencies."

@@ -7,7 +7,7 @@ pdf: salazar2023sequential
 image: salazar2023sequential.jpg
 display: Solar Energy
 year: 2023
-doi: 
+doi: 10.1016/j.solener.2023.112030
 code: 
 suppmat: 
 abstract: "Introduces sequential stochastic and bootstrap methodologies for generating synthetic solar irradiance time series with high temporal resolution."

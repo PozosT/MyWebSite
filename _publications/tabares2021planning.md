@@ -7,7 +7,7 @@ pdf: tabares2021planning
 image: tabares2021planning.jpg
 display: IEEE Access
 year: 2021
-doi: 
+doi: 10.1109/ACCESS.2021.3099435
 code: 
 suppmat: 
 abstract: "This paper presents a scenario-based convex programming model to enhance reconfiguration capabilities in electrical distribution systems by planning reserve branches."

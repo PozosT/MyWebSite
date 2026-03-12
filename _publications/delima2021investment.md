@@ -7,7 +7,7 @@ pdf: delima2021investment
 image: delima2021investment.jpg
 display: International Journal of Electrical Power & Energy Systems
 year: 2021
-doi: 
+doi: 10.1016/j.ijepes.2021.106925
 code: 
 suppmat: 
 abstract: "This study analyzes the trade-off between investment costs and CO2 emissions using a multi-objective stochastic programming model."

@@ -7,7 +7,7 @@ pdf: cortes2024innovative
 image: cortes2024innovative.jpg
 display: Energies
 year: 2024
-doi: 
+doi: 10.3390/en17112633
 code: 
 suppmat: 
 abstract: "Proposes an innovative approach to radiality representation in electrical distribution system reconfiguration, enhancing efficiency and computational performance."

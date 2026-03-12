@@ -7,7 +7,7 @@ pdf: tabares2022multistage
 image: tabares2022multistage.jpg
 display: International Journal of Electrical Power & Energy Systems
 year: 2022
-doi: 
+doi: 10.1016/j.ijepes.2021.107916
 code: 
 suppmat: 
 abstract: "The paper presents a novel multistage reliability-based planning model for AC distribution networks, incorporating post-fault reconfiguration."

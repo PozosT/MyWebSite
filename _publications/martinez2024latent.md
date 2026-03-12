@@ -7,7 +7,7 @@ pdf: martinez2024latent
 image: martinez2024latent.jpg
 display: Sensors
 year: 2024
-doi: 
+doi: 10.3390/s24144662
 code: 
 suppmat: 
 abstract: "Introduces latent space representations for real-time hand-eye calibration using marker-less systems to improve performance in robotic systems."

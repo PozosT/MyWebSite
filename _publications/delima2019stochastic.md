@@ -7,7 +7,7 @@ pdf: delima2019stochastic
 image: delima2019stochastic.jpg
 display: 2019 IEEE PES Innovative Smart Grid Technologies Conference
 year: 2019
-doi: 
+doi: 10.1109/isgt-la.2019.8895395
 code: 
 suppmat: 
 abstract: "The study develops a stochastic programming model for renewable generation and CO2 emissions in distribution system planning."

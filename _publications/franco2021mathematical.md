@@ -7,7 +7,7 @@ pdf: franco2021mathematical
 image: franco2021mathematical.jpg
 display: Local Electricity Markets
 year: 2021
-doi: 
+doi: 10.1016/b978-0-12-820074-2.00019-8
 code: 
 suppmat: 
 abstract: "This chapter explores mathematical models and optimization techniques for supporting the development of local electricity markets."

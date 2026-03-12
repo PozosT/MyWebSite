@@ -7,7 +7,7 @@ pdf: silveira2021mathematical
 image: silveira2021mathematical.jpg
 display: Electric Power Systems Research
 year: 2021
-doi: 
+doi: 10.1016/j.epsr.2021.107272
 code: 
 suppmat: 
 abstract: "This study compares mathematical optimization techniques and metaheuristics in solving distribution system reconfiguration problems."

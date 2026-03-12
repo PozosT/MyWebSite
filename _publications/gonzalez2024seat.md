@@ -7,7 +7,7 @@ pdf: gonzalez2024seat
 image: gonzalez2024seat.jpg
 display: Journal of Air Transport Management
 year: 2024
-doi: 
+doi: 10.1016/j.jairtraman.2024.102582
 code: 
 suppmat: 
 abstract: "Proposes a methodology for seat assignment recommendation in airline purchase flows to maximize revenue while ensuring weight and balance constraints."
