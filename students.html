@@ -61,65 +61,84 @@ permalink: /students/
 <div class="tab-content sup-tab-content">
 
   <!-- MASTER'S TAB -->
-  <div class="tab-pane fade show active" id="master" role="tabpanel">
+  <div class="tab-pane fade show active" id="master" role="tabpanel" aria-labelledby="master-tab">
     <p class="sup-desc">Master's theses directed at <strong>Universidad de los Andes</strong>.
     <span class="badge-prog badge-miind">MIIND</span> Ingeniería Industrial &nbsp;
     <span class="badge-prog badge-miia">MIIA</span> Inteligencia Artificial</p>
     <ol class="sup-list">
-    {% assign sorted_master = site.data.theses_advisor | sort: "period" | reverse %}
-    {% for t in sorted_master %}
-      <li class="sup-item {% if t.status %}sup-inprogress{% endif %}">
+      {% for t in site.data.theses_advisor %}
+      <li class="sup-item{% if t.status %} sup-inprogress{% endif %}">
         <div class="sup-item-main">{{ t.title }}</div>
         <div class="sup-item-meta">
-          <span class="badge-prog {% if t.program == 'MIIND' %}badge-miind{% else %}badge-miia{% endif %}">{{ t.program }}</span>
+          {% if t.program == 'MIIND' %}<span class="badge-prog badge-miind">MIIND</span>{% else %}<span class="badge-prog badge-miia">MIIA</span>{% endif %}
           <span class="sup-period"><i class="fas fa-calendar-alt me-1"></i>{{ t.period }}</span>
-          <span class="sup-nstudents"><i class="fas fa-users me-1"></i>{{ t.students | size }} student{% if t.students.size > 1 %}s{% endif %}</span>
+          <span class="sup-nstudents"><i class="fas fa-users me-1"></i>{{ t.students | size }} students</span>
           {% if t.status %}<span class="sup-status-badge">{{ t.status }}</span>{% endif %}
         </div>
       </li>
-    {% endfor %}
+      {% endfor %}
     </ol>
   </div>
 
   <!-- UNDERGRAD TAB -->
-  <div class="tab-pane fade" id="undergrad" role="tabpanel">
+  <div class="tab-pane fade" id="undergrad" role="tabpanel" aria-labelledby="undergrad-tab">
     <p class="sup-desc">Bachelor's final projects (PG2) directed at the <strong>Departamento de Ingeniería Industrial, Universidad de los Andes</strong>.</p>
     <ol class="sup-list">
-    {% assign sorted_undergrad = site.data.theses_undergrad | sort: "period" | reverse %}
-    {% for t in sorted_undergrad %}
+      {% for t in site.data.theses_undergrad %}
       <li class="sup-item">
         <div class="sup-item-main">{{ t.title }}</div>
         <div class="sup-item-meta">
           <span class="badge-prog badge-pregrado">Pregrado</span>
           <span class="sup-period"><i class="fas fa-calendar-alt me-1"></i>{{ t.period }}</span>
-          <span class="sup-nstudents"><i class="fas fa-users me-1"></i>{{ t.students | size }} student{% if t.students.size > 1 %}s{% endif %}</span>
+          <span class="sup-nstudents"><i class="fas fa-users me-1"></i>{{ t.students | size }} students</span>
         </div>
       </li>
-    {% endfor %}
+      {% endfor %}
     </ol>
   </div>
 
   <!-- JURY TAB -->
-  <div class="tab-pane fade" id="jury" role="tabpanel">
+  <div class="tab-pane fade" id="jury" role="tabpanel" aria-labelledby="jury-tab">
     <p class="sup-desc">Master's thesis defenses where I served as examiner/jury member.</p>
     <ol class="sup-list">
-    {% assign sorted_jury = site.data.theses_jury | sort: "period" | reverse %}
-    {% for t in sorted_jury %}
-      <li class="sup-item {% if t.status %}sup-inprogress{% endif %}">
+      {% for t in site.data.theses_jury %}
+      <li class="sup-item{% if t.status %} sup-inprogress{% endif %}">
         <div class="sup-item-main">{{ t.title }}</div>
         <div class="sup-item-meta">
-          <span class="badge-prog {% if t.program == 'MIIND' %}badge-miind{% else %}badge-miia{% endif %}">{{ t.program }}</span>
+          {% if t.program == 'MIIND' %}<span class="badge-prog badge-miind">MIIND</span>{% else %}<span class="badge-prog badge-miia">MIIA</span>{% endif %}
           <span class="sup-period"><i class="fas fa-calendar-alt me-1"></i>{{ t.period }}</span>
           {% if t.status %}<span class="sup-status-badge">{{ t.status }}</span>{% endif %}
         </div>
       </li>
-    {% endfor %}
+      {% endfor %}
     </ol>
   </div>
 
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var tabEls = document.querySelectorAll('#supTabs button[data-bs-toggle="tab"]');
+  tabEls.forEach(function(tabEl) {
+    tabEl.addEventListener('shown.bs.tab', function (event) {
+      // ensure shown tab pane is visible
+    });
+  });
+  // Force-show the active pane in case Bootstrap re-initialized it
+  var activePane = document.querySelector('#master');
+  if (activePane) {
+    activePane.classList.add('show', 'active');
+  }
+});
+</script>
+
 <style>
+/* Force active tab pane visibility */
+.tab-content > .tab-pane.show.active {
+  display: block !important;
+  opacity: 1 !important;
+}
+
 /* Hero stats banner */
 .sup-hero {
   display: flex;
