@@ -81,7 +81,7 @@ permalink: /students/
   <div class="thesis-title">{{ t.title }}</div>
   <div class="thesis-students">
     <i class="fas fa-user-graduate me-1" style="color:#6c757d;font-size:0.85rem;"></i>
-    {% for s in t.students %}{{ s }}{% unless forloop.last %} &nbsp;·&nbsp; {% endunless %}{% endfor %}
+    {{ t.students | size }} student{% if t.students.size > 1 %}s{% endif %}
   </div>
 </div>
 {% endif %}
@@ -120,13 +120,8 @@ permalink: /students/
   <div class="thesis-title">{{ t.title }}</div>
   <div class="thesis-students">
     <i class="fas fa-user-graduate me-1" style="color:#6c757d;font-size:0.85rem;"></i>
-    {% for s in t.students %}{{ s }}{% unless forloop.last %} &nbsp;·&nbsp; {% endunless %}{% endfor %}
+    {{ t.students | size }} student{% if t.students.size > 1 %}s{% endif %}
   </div>
-  {% if t.co_advisor %}
-  <div class="thesis-coadvisor">
-    <i class="fas fa-users me-1" style="color:#9ca3af;font-size:0.8rem;"></i>Co-advisor: {{ t.co_advisor }}
-  </div>
-  {% endif %}
 </div>
 {% endif %}
 {% endfor %}
@@ -165,7 +160,7 @@ permalink: /students/
   <div class="thesis-title">{{ t.title }}</div>
   <div class="thesis-students">
     <i class="fas fa-user me-1" style="color:#6c757d;font-size:0.85rem;"></i>
-    {% for s in t.students %}{{ s }}{% unless forloop.last %} &nbsp;·&nbsp; {% endunless %}{% endfor %}
+    {{ t.students | size }} student{% if t.students.size > 1 %}s{% endif %}
   </div>
 </div>
 {% endif %}
