@@ -1,0 +1,56 @@
+# PhD students supervised by Dra. Alejandra Tabares Pozos
+
+- name: Brayan Yesid Coy Palacios
+  photo: placeholder_male.svg
+  status: active
+  start_year: 2024
+  program: Doctorado en Ingeniería
+  university: Universidad de los Andes
+  topic: "Aprendizaje por refuerzo jerárquico para la planificación y operación de sistemas de agua potable bajo incertidumbre"
+  description: "Propone un marco de aprendizaje por refuerzo jerárquico para la planificación integrada de sistemas de distribución de agua potable. El marco articula decisiones estructurales de largo plazo (expansión de infraestructura) con decisiones operacionales de corto plazo mediante dos agentes especializados en arquitectura jerárquica. Incluye un modelo sustituto basado en redes neuronales sobre grafos (GNN) para estimar factibilidad hidráulica, y entrenamiento sobre escenarios estocásticos con incertidumbre climática y económica."
+  keywords:
+    - Hierarchical Reinforcement Learning
+    - Water Distribution Systems
+    - Graph Neural Networks
+    - Stochastic Optimization
+    - Infrastructure Planning
+  scholar: "https://scholar.google.com/citations?user=Yesid+Coy"
+  orcid: "https://orcid.org/0000-0001-8653-8036"
+  linkedin: "https://www.linkedin.com/in/brayan-yesid-coy-palacios"
+
+- name: Nelson Andrés Salazar Peña
+  photo: placeholder_male.svg
+  status: active
+  start_year: 2024
+  program: Doctorado en Ingeniería
+  university: Universidad de los Andes
+  topic: "Cooperación implícita mediante aprendizaje por refuerzo multi-agente para mercados locales de energía"
+  description: "Aborda la coordinación de agentes descentralizados con intercambio limitado de información en mercados locales de energía (LEMs) mediante cooperación implícita y aprendizaje por refuerzo multi-agente (MARL). Introduce un framework de simulación open-source implementado como ambiente Gymnasium con mecanismos de clearing plug-and-play, modelos de agentes con restricciones físicas y red eléctrica realista. La metodología emplea señales estigmérgicas (KPIs del sistema) para fomentar cooperación sin comunicación explícita entre agentes, validada mediante diseño factorial 3×3 sobre topología IEEE 34 nodos."
+  keywords:
+    - Multi-Agent Reinforcement Learning
+    - Local Energy Markets
+    - Distributed Energy Resources
+    - Implicit Cooperation
+    - Dec-POMDP
+  scholar: "https://scholar.google.com/citations?user=d9eeZ9EAAAAJ&hl=en"
+  orcid: "https://orcid.org/0009-0003-7636-4150"
+  linkedin: "https://co.linkedin.com/in/nasalazar10"
+  scopus: "https://www.scopus.com/authid/detail.uri?authorId=58613535000"
+
+- name: Pablo José Cortés Sanabria
+  photo: placeholder_male.svg
+  status: active
+  start_year: 2024
+  program: Doctorado en Ingeniería
+  university: Universidad de los Andes
+  topic: "Aprendizaje por refuerzo profundo para gestión de energía en microrredes trifásicas desbalanceadas"
+  description: "Propone un marco de aprendizaje por refuerzo profundo (DRL) para un sistema de gestión de energía (EMS) centralizado en microrredes trifásicas desbalanceadas conectadas a la red. Integra un modelo detallado de flujo de potencia con variaciones estocásticas en generación renovable, demanda y precios de mercado. Implementa algoritmos SAC, TD3 y PPO entrenados en un entorno de simulación informado por la física del sistema, comparando su desempeño con métodos convencionales de optimización."
+  keywords:
+    - Deep Reinforcement Learning
+    - Microgrid Energy Management
+    - Three-Phase Unbalanced Systems
+    - Soft Actor-Critic
+    - Power Flow Optimization
+  scholar: "https://scholar.google.com/citations?user=Jr8rSacAAAAJ&hl=es"
+  orcid: "https://orcid.org/0009-0005-8935-196X"
+  linkedin: "https://www.linkedin.com/in/pablosanabria19615411a/"
