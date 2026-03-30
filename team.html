@@ -5,39 +5,28 @@ sitemap: false
 permalink: /team/
 ---
 
-<h1>Team</h1>
+<h1>Research Group</h1>
 
+<!-- PI compact banner -->
 {% for member in site.data.pi %}
-<div class="team-pi-card">
-  <div class="team-pi-photo">
-    <img src="{{ site.baseurl }}/images/team/{{ member.photo-large | default: member.photo-small }}" alt="{{ member.name }}" />
-  </div>
-  <div class="team-pi-info">
+<div class="team-pi-banner">
+  <img src="{{ site.baseurl }}/images/team/{{ member.photo-large | default: member.photo-small }}" alt="{{ member.name }}" class="team-pi-avatar" />
+  <div class="team-pi-brief">
     <h3 class="team-pi-name">{{ member.name }}</h3>
     <p class="team-pi-role">{{ member.info }}</p>
     <div class="team-pi-links">
-      {% if member.email %}<a href="mailto:{{ member.email }}" title="Email"><i class="fas fa-envelope fa-lg"></i></a>{% endif %}
-      {% if member.scholar %}<a href="{{ member.scholar }}" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar-square ai-lg"></i></a>{% endif %}
-      {% if member.orcid %}<a href="{{ member.orcid }}" target="_blank" title="ORCID"><i class="ai ai-orcid-square ai-lg"></i></a>{% endif %}
-      {% if member.linkedin %}<a href="{{ member.linkedin }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>{% endif %}
-      {% if member.github %}<a href="{{ member.github }}" target="_blank" title="GitHub"><i class="fab fa-github fa-lg"></i></a>{% endif %}
-      {% if member.researchgate %}<a href="{{ member.researchgate }}" target="_blank" title="ResearchGate"><i class="ai ai-researchgate-square ai-lg"></i></a>{% endif %}
+      {% if member.email %}<a href="mailto:{{ member.email }}" title="Email"><i class="fas fa-envelope"></i></a>{% endif %}
+      {% if member.scholar %}<a href="{{ member.scholar }}" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>{% endif %}
+      {% if member.linkedin %}<a href="{{ member.linkedin }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>{% endif %}
     </div>
-    <ul class="team-pi-edu">
-      {% if member.education1 %}<li>{{ member.education1 }}</li>{% endif %}
-      {% if member.education2 %}<li>{{ member.education2 }}</li>{% endif %}
-      {% if member.education3 %}<li>{{ member.education3 }}</li>{% endif %}
-      {% if member.education4 %}<li>{{ member.education4 }}</li>{% endif %}
-      {% if member.education5 %}<li>{{ member.education5 }}</li>{% endif %}
-      {% if member.education6 %}<li>{{ member.education6 }}</li>{% endif %}
-    </ul>
   </div>
+  <a href="{{ site.baseurl }}/about/" class="team-pi-morelink"><i class="fas fa-arrow-right me-1"></i>Full profile</a>
 </div>
 {% endfor %}
 
 <!-- PhD Students Section -->
 {% if site.data.phd_students.size > 0 %}
-<h2 class="mt-5 mb-3" style="color:#1e40af;"><i class="fas fa-user-graduate me-2"></i>PhD Students</h2>
+<h2 class="mt-4 mb-3" style="color:#1e40af;"><i class="fas fa-user-graduate me-2"></i>PhD Students</h2>
 <p class="text-muted mb-4">Doctoral researchers working under my supervision at Universidad de los Andes.</p>
 
 <div class="phd-grid">
@@ -73,70 +62,59 @@ permalink: /team/
 {% endif %}
 
 <style>
-.team-pi-card {
+/* PI compact banner */
+.team-pi-banner {
   display: flex;
-  gap: 2rem;
-  background: #fff;
-  border: 1px solid #e9ecef;
+  align-items: center;
+  gap: 1.2rem;
+  background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%);
   border-radius: 12px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
 }
-.team-pi-photo {
+.team-pi-avatar {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.3);
   flex-shrink: 0;
 }
-.team-pi-photo img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 3px solid #eaf0fb;
-}
-.team-pi-info {
-  flex: 1;
-  min-width: 0;
-}
+.team-pi-brief { flex: 1; }
 .team-pi-name {
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: #1e40af;
-  margin: 0 0 0.2rem 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.1rem 0;
 }
 .team-pi-role {
-  font-size: 0.95rem;
-  color: #6c757d;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.75);
   font-style: italic;
-  margin-bottom: 0.9rem;
+  margin: 0 0 0.4rem 0;
 }
 .team-pi-links {
   display: flex;
-  gap: 0.65rem;
-  margin-bottom: 1.1rem;
-  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 .team-pi-links a {
-  color: #1e40af;
-  font-size: 1.3rem;
+  color: rgba(255,255,255,0.7);
+  font-size: 1.05rem;
   transition: color 0.2s;
 }
-.team-pi-links a:hover { color: #3b82f6; }
-.team-pi-edu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.team-pi-links a:hover { color: #fff; }
+.team-pi-morelink {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
 }
-.team-pi-edu li {
-  font-size: 0.87rem;
-  color: #495057;
-  padding: 0.3rem 0;
-  border-bottom: 1px solid #f8f9fa;
-  line-height: 1.5;
-}
-.team-pi-edu li:last-child { border-bottom: none; }
+.team-pi-morelink:hover { color: #fff; }
 @media (max-width: 640px) {
-  .team-pi-card { flex-direction: column; gap: 1.25rem; }
-  .team-pi-photo img { width: 120px; height: 120px; }
+  .team-pi-banner { flex-wrap: wrap; }
+  .team-pi-morelink { width: 100%; text-align: right; margin-top: 0.5rem; }
 }
 
 /* PhD Students Cards */
