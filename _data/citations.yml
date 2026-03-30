@@ -1,0 +1,196 @@
+metrics:
+  name: Alejandra Tabares Pozos
+  h_index: 14
+  i10_index: 17
+  total_citations: 986
+  last_updated: '2026-03-30'
+publications:
+- key: arias2017robust
+  title: Robust joint expansion planning of electrical distribution systems and EV charging stations
+  citations: 162
+  scholar_title: Robust joint expansion planning of electrical distribution systems and EV charging stations
+  match_score: 1.0
+- key: barrera2025bus
+  title: Optimization of Bus Dispatching in Public Transportation Through a Heuristic Approach Based on Passenger Demand Forecasting
+  citations: 5
+  scholar_title: Optimization of Bus Dispatching in Public Transportation Through a Heuristic Approach Based on Passenger
+    Demand Forecasting
+  match_score: 1.0
+- key: cortes2024innovative
+  title: 'An Innovative Approach to Radiality Representation in Electrical Distribution System Reconfiguration: Enhanced Efficiency
+    and Computational Performance'
+  citations: 3
+  scholar_title: 'An innovative approach to radiality representation in electrical distribution system reconfiguration: Enhanced
+    efficiency and computational performance'
+  match_score: 1.0
+- key: coy2024water
+  title: A Methodology for Forecasting Demands in a Water Distribution Network Based on the Classical and Neural Networks
+    Approach
+  citations: 2
+  scholar_title: A methodology for forecasting demands in a water distribution network based on the classical and neural networks
+    approach
+  match_score: 1.0
+- key: delima2019stochastic
+  title: A stochastic programming model for the planning of distribution systems considering renewable distributed generation
+    and CO2 emissions
+  citations: 17
+  scholar_title: A Stochastic Programming Model for the Planning of Distribution Systems Considering Renewable Distributed
+    Generation and CO2 Emissions
+  match_score: 1.0
+- key: delima2021investment
+  title: 'Investment & generation costs vs CO2 emissions in the distribution system expansion planning: A multi-objective
+    stochastic programming approach'
+  citations: 55
+  scholar_title: 'Investment & generation costs vs CO2 emissions in the distribution system expansion planning: A multi-objective
+    stochastic programming approach'
+  match_score: 1.0
+- key: franco2021convex
+  title: Convex Optimization Methods for the Restoration Topology and the Switching Sequence Restoration in Distribution Systems
+  citations: 0
+  match_score: 0.47
+- key: franco2021mathematical
+  title: Mathematical models and optimization techniques to support local electricity markets
+  citations: 7
+  scholar_title: Mathematical models and optimization techniques to support local electricity markets
+  match_score: 1.0
+- key: gonzalez2024seat
+  title: Seat assignment recommendation in airlines purchase flow to increase ancillary revenue considering weight and balance
+    constraints
+  citations: 10
+  scholar_title: Seat assignment recommendation in airlines purchase flow to increase ancillary revenue considering weight
+    and balance constraints
+  match_score: 1.0
+- key: martinez2021battery
+  title: Generation of Alternative Battery Allocation Proposals in Distribution Systems by the Optimization of Different Economic
+    Metrics within a Mathematical Model
+  citations: 16
+  scholar_title: Generation of alternative battery allocation proposals in distribution systems by the optimization of different
+    economic metrics within a mathematical model
+  match_score: 1.0
+- key: martinez2022spatial
+  title: Spatial and Temporal Analysis Applied to the Optimal Battery Allocation in Electrical Distribution Systems
+  citations: 0
+  match_score: 0.48
+- key: martinez2024latent
+  title: Latent Space Representations for Marker-Less Realtime Hand-Eye Calibration
+  citations: 3
+  scholar_title: Latent space representations for marker-less realtime hand–eye calibration
+  match_score: 0.99
+- key: montes2025container
+  title: A Hybrid Approach for the Container Loading Problem for Enhancing the Dynamic Stability Representation
+  citations: 8
+  scholar_title: A hybrid approach for the container loading problem for enhancing the dynamic stability representation
+  match_score: 1.0
+- key: otero2024dengue
+  title: 'Exploring Dengue Dynamics: A Multi-Scale Analysis of Spatio-Temporal Trends in Ibagué, Colombia'
+  citations: 8
+  scholar_title: 'Exploring dengue dynamics: A multi-scale analysis of spatio-temporal trends in Ibagué, Colombia'
+  match_score: 1.0
+- key: pozos2014mixed
+  title: A mixed-binary linear formulation for the distribution system expansion planning problem
+  citations: 15
+  scholar_title: A mixed-binary linear formulation for the distribution system expansion planning problem
+  match_score: 1.0
+- key: salazar2023sequential
+  title: Sequential stochastic and bootstrap methods to generate synthetic solar irradiance time series of high temporal resolution
+    based on historical observations
+  citations: 11
+  scholar_title: Sequential stochastic and bootstrap methods to generate synthetic solar irradiance time series of high temporal
+    resolution based on historical observations
+  match_score: 1.0
+- key: salazar2025performance
+  title: Performance assessment and dynamic fault detection in photovoltaic systems using artificial intelligence
+  citations: 10
+  scholar_title: Performance assessment and dynamic fault detection in photovoltaic systems using artificial intelligence
+  match_score: 1.0
+- key: sanchez2022clustering
+  title: A clustering approach for the optimal siting of recharging stations in the electric vehicle routing problem with
+    time windows
+  citations: 47
+  scholar_title: A clustering approach for the optimal siting of recharging stations in the electric vehicle routing problem
+    with time windows
+  match_score: 1.0
+- key: silva2025iterated
+  title: An iterated local search based approach for a real rich vehicle routing problem with time windows
+  citations: 3
+  scholar_title: An iterated local search based approach for a real rich vehicle routing problem with time windows
+  match_score: 1.0
+- key: silveira2021mathematical
+  title: 'Mathematical optimization versus Metaheuristic techniques: A performance comparison for reconfiguration of distribution
+    systems'
+  citations: 82
+  scholar_title: 'Mathematical optimization versus Metaheuristic techniques: A performance comparison for reconfiguration
+    of distribution systems'
+  match_score: 1.0
+- key: tabares2015multistage
+  title: Multistage long-term expansion planning of electrical distribution systems considering multiple alternatives
+  citations: 158
+  scholar_title: Multistage long-term expansion planning of electrical distribution systems considering multiple alternatives
+  match_score: 1.0
+- key: tabares2019enhanced
+  title: An enhanced algebraic approach for the analytical reliability assessment of distribution systems
+  citations: 88
+  scholar_title: An enhanced algebraic approach for the analytical reliability assessment of distribution systems
+  match_score: 1.0
+- key: tabares2020optimal
+  title: Optimal capacity sizing for the integration of a battery and photovoltaic microgrid to supply auxiliary services
+    in substations under a contingency
+  citations: 20
+  scholar_title: Optimal capacity sizing for the integration of a battery and photovoltaic microgrid to supply auxiliary services
+    in substations under a contingency
+  match_score: 1.0
+- key: tabares2021planning
+  title: 'Planning of reserve branches to increase reconfiguration capability in distribution systems: a scenario-based convex
+    programming approach'
+  citations: 9
+  scholar_title: 'Planning of reserve branches to increase reconfiguration capability in distribution systems: a scenario-based
+    convex programming approach'
+  match_score: 1.0
+- key: tabares2022multistage
+  title: Multistage reliability-based expansion planning of AC distribution networks using a mixed-integer linear programming
+    model
+  citations: 44
+  scholar_title: Multistage reliability-based expansion planning of AC distribution networks using a mixed-integer linear
+    programming model
+  match_score: 1.0
+- key: tabares2024sddp
+  title: Using Stochastic Dual Dynamic Programming to Solve the Multi-Stage Energy Management Problem in Microgrids
+  citations: 21
+  scholar_title: Using stochastic dual dynamic programming to solve the multi-stage energy management problem in microgrids
+  match_score: 1.0
+- key: zandrazavi2021hybrid
+  title: Hybrid stochastic/information gap decision theory model for optimal energy management of grid-connected microgrids
+    with uncertainties in renewable energy generation and demand
+  citations: 5
+  scholar_title: Hybrid stochastic/information gap decision theory model for optimal energy management of grid-connected microgrids
+    with uncertainties in renewable energy generation and demand
+  match_score: 1.0
+- key: zandrazavi2022stochastic
+  title: Stochastic multi-objective optimal energy management of grid-connected unbalanced microgrids with renewable energy
+    generation and plug-in electric vehicles
+  citations: 127
+  scholar_title: Stochastic multi-objective optimal energy management of grid-connected unbalanced microgrids with renewable
+    energy generation and plug-in electric vehicles
+  match_score: 1.0
+- key: zandrazavi2023fuzzy
+  title: A New Hybrid Fuzzy-Stochastic Model for Day-ahead Scheduling of Isolated Microgrids
+  citations: 1
+  scholar_title: A New Hybrid Fuzzy-Stochastic Model for Day-ahead Scheduling of Isolated Microgrids
+  match_score: 1.0
+- key: zandrazavi2023resiliency
+  title: A Resiliency-oriented Optimal Operation of Microgrids Considering Electric Vehicles
+  citations: 1
+  scholar_title: A Resiliency-oriented Optimal Operation of Microgrids Considering Electric Vehicles
+  match_score: 1.0
+- key: zandrazavi2023stochastic
+  title: Stochastic Programming Versus Chance-Constrained Optimization for Optimal Rescheduling of Microgrids in Hierarchical
+    Multi-Microgrid Systems
+  citations: 1
+  scholar_title: Stochastic programming versus chance-constrained optimization for optimal rescheduling of microgrids in hierarchical
+    multi-microgrid systems
+  match_score: 1.0
+- key: zandrazavi2023two
+  title: A Two-stage Stochastic Model for Coordinated Operation of Natural Gas and Microgrid Networks
+  citations: 1
+  scholar_title: A Two-stage Stochastic Model for Coordinated Operation of Natural Gas and Microgrid Networks
+  match_score: 1.0

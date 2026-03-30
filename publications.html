@@ -11,7 +11,42 @@ permalink: /publications/
 
 <div class="container-fluid px-0 mb-5">
 
-  <!-- Stats bar -->
+  <!-- Scholar metrics bar -->
+  {% if site.data.citations %}
+  <div class="scholar-metrics mb-4">
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <div class="metric-card">
+          <div class="metric-number">{{ total_pubs }}</div>
+          <div class="metric-label"><i class="fas fa-file-alt me-1"></i>Publications</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="metric-card metric-citations">
+          <div class="metric-number">{{ site.data.citations.metrics.total_citations }}</div>
+          <div class="metric-label"><i class="fas fa-quote-right me-1"></i>Total citations</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="metric-card metric-hindex">
+          <div class="metric-number">{{ site.data.citations.metrics.h_index }}</div>
+          <div class="metric-label"><i class="fas fa-chart-line me-1"></i>h-index</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="metric-card metric-i10">
+          <div class="metric-number">{{ site.data.citations.metrics.i10_index }}</div>
+          <div class="metric-label"><i class="fas fa-award me-1"></i>i10-index</div>
+        </div>
+      </div>
+    </div>
+    <div class="scholar-source">
+      <i class="fas fa-graduation-cap me-1"></i>Source: <a href="https://scholar.google.com/citations?user=C9PY5CwAAAAJ" target="_blank">Google Scholar</a>
+      · Updated {{ site.data.citations.metrics.last_updated }}
+    </div>
+  </div>
+  {% else %}
+  <!-- Fallback stats without Scholar data -->
   <div class="row g-3 mb-4">
     <div class="col-sm-4">
       <div class="text-center p-3 rounded" style="background:#eaf0fb;">
@@ -39,6 +74,7 @@ permalink: /publications/
       </div>
     </div>
   </div>
+  {% endif %}
 
   <!-- Publications per year chart -->
   <div class="card border-0 shadow-sm mb-5">
@@ -64,11 +100,16 @@ permalink: /publications/
 
 <div class="pub-card">
   <div class="pub-body">
-    <div class="pub-title">
-      {% if publi.doi %}<a href="http://doi.org/{{ publi.doi }}" target="_blank">{{ publi.title }}</a>
-      {% elsif publi.pdf %}<a href="{{ site.baseurl }}/publications/{{ publi.pdf }}.pdf" target="_blank">{{ publi.title }}</a>
-      {% else %}{{ publi.title }}
-      {% endif %}
+    <div class="pub-title-row">
+      <div class="pub-title">
+        {% if publi.doi %}<a href="http://doi.org/{{ publi.doi }}" target="_blank">{{ publi.title }}</a>
+        {% elsif publi.pdf %}<a href="{{ site.baseurl }}/publications/{{ publi.pdf }}.pdf" target="_blank">{{ publi.title }}</a>
+        {% else %}{{ publi.title }}
+        {% endif %}
+      </div>
+      {% if site.data.citations %}{% for cp in site.data.citations.publications %}{% if cp.key == publi.url %}{% if cp.citations > 0 %}
+      <div class="pub-cite-badge" title="Google Scholar citations"><i class="fas fa-quote-right"></i> {{ cp.citations }}</div>
+      {% endif %}{% endif %}{% endfor %}{% endif %}
     </div>
     <div class="pub-authors">{{ publi.authors }}</div>
     <div class="pub-venue">
@@ -110,6 +151,33 @@ permalink: /publications/
 </p>
 
 <style>
+/* Scholar metrics */
+.scholar-metrics { background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%); border-radius: 12px; padding: 1.5rem; color: #fff; }
+.metric-card { text-align: center; padding: 1rem 0.5rem; background: rgba(255,255,255,0.12); border-radius: 8px; }
+.metric-card.metric-citations { background: rgba(255,255,255,0.18); }
+.metric-card.metric-hindex { background: rgba(255,255,255,0.15); }
+.metric-card.metric-i10 { background: rgba(255,255,255,0.12); }
+.metric-number { font-size: 2rem; font-weight: 800; color: #fff; line-height: 1.2; }
+.metric-label { font-size: 0.82rem; color: rgba(255,255,255,0.8); margin-top: 0.2rem; }
+.scholar-source { text-align: center; margin-top: 0.8rem; font-size: 0.78rem; color: rgba(255,255,255,0.6); }
+.scholar-source a { color: rgba(255,255,255,0.85); text-decoration: underline; }
+
+/* Citation badge on pub cards */
+.pub-title-row { display: flex; align-items: flex-start; gap: 0.75rem; }
+.pub-title-row .pub-title { flex: 1; }
+.pub-cite-badge {
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+.pub-cite-badge i { font-size: 0.65rem; margin-right: 3px; }
+
 .pub-year-heading {
   font-size: 1.4rem;
   font-weight: 700;
