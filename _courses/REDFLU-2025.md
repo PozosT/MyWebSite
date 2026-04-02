@@ -3,7 +3,7 @@ title: "Flujo en Redes"
 layout: course
 sitemap: false
 name: Flujo en Redes
-name_url: https://industrial.uniandes.edu.co/courses/flujo-en-redes
+name_url: https://pozost.github.io/Flujo_en_redes/SyllabusFlujoEnRedes.html
 year_start: 2025
 year_end: 
 institution: Universidad de los Andes
