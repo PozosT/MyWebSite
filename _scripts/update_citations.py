@@ -15,7 +15,7 @@ from pathlib import Path
 from difflib import SequenceMatcher
 
 try:
-    from scholarly import scholarly
+    from scholarly import scholarly, ProxyGenerator
 except ImportError:
     print("ERROR: scholarly not installed. Run: pip install scholarly")
     sys.exit(1)
@@ -24,6 +24,19 @@ SCHOLAR_ID = "C9PY5CwAAAAJ"
 DATA_DIR = Path(__file__).resolve().parent.parent / "_data"
 PUBLICATIONS_DIR = Path(__file__).resolve().parent.parent / "_publications"
 OUTPUT_FILE = DATA_DIR / "citations.yml"
+
+MAX_RETRIES = 3
+
+
+def setup_proxy():
+    """Configure scholarly to use free proxies to avoid Google Scholar blocks."""
+    pg = ProxyGenerator()
+    success = pg.FreeProxies()
+    if success:
+        scholarly.use_proxy(pg)
+        print("Proxy configured successfully")
+    else:
+        print("WARNING: Could not configure proxy, trying direct connection")
 
 
 def normalize_title(title: str) -> str:
@@ -58,31 +71,46 @@ def load_local_publications() -> list[dict]:
 
 
 def fetch_scholar_data() -> tuple[dict, list[dict]]:
-    """Fetch author metrics and publication citations from Google Scholar."""
-    print(f"Fetching Scholar profile for ID: {SCHOLAR_ID}...")
-    author = scholarly.search_author_id(SCHOLAR_ID)
-    author = scholarly.fill(author, sections=["basics", "indices", "publications"])
+    """Fetch author metrics and publication citations from Google Scholar.
 
-    metrics = {
-        "name": author.get("name", ""),
-        "h_index": author.get("hindex", 0),
-        "i10_index": author.get("i10index", 0),
-        "total_citations": author.get("citedby", 0),
-        "last_updated": time.strftime("%Y-%m-%d"),
-    }
+    Retries with fresh proxy on failure.
+    """
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            print(f"Attempt {attempt}/{MAX_RETRIES}: Fetching Scholar profile for ID: {SCHOLAR_ID}...")
+            setup_proxy()
+            author = scholarly.search_author_id(SCHOLAR_ID)
+            author = scholarly.fill(author, sections=["basics", "indices", "publications"])
 
-    scholar_pubs = []
-    for pub in author.get("publications", []):
-        bib = pub.get("bib", {})
-        scholar_pubs.append({
-            "title": bib.get("title", ""),
-            "citations": pub.get("num_citations", 0),
-            "year": bib.get("pub_year", ""),
-            "scholar_url": pub.get("author_pub_id", ""),
-        })
+            metrics = {
+                "name": author.get("name", ""),
+                "h_index": author.get("hindex", 0),
+                "i10_index": author.get("i10index", 0),
+                "total_citations": author.get("citedby", 0),
+                "last_updated": time.strftime("%Y-%m-%d"),
+            }
 
-    print(f"Found {len(scholar_pubs)} publications on Scholar")
-    return metrics, scholar_pubs
+            scholar_pubs = []
+            for pub in author.get("publications", []):
+                bib = pub.get("bib", {})
+                scholar_pubs.append({
+                    "title": bib.get("title", ""),
+                    "citations": pub.get("num_citations", 0),
+                    "year": bib.get("pub_year", ""),
+                    "scholar_url": pub.get("author_pub_id", ""),
+                })
+
+            print(f"Found {len(scholar_pubs)} publications on Scholar")
+            return metrics, scholar_pubs
+
+        except Exception as e:
+            print(f"Attempt {attempt} failed: {e}")
+            if attempt < MAX_RETRIES:
+                wait = 30 * attempt
+                print(f"Waiting {wait}s before retry...")
+                time.sleep(wait)
+
+    return None, None
 
 
 def match_publications(local_pubs, scholar_pubs) -> list[dict]:
@@ -121,6 +149,12 @@ def main():
     print(f"Loaded {len(local_pubs)} local publications")
 
     metrics, scholar_pubs = fetch_scholar_data()
+
+    if metrics is None:
+        print("\nWARNING: Could not fetch data from Google Scholar after all retries.")
+        print("Keeping existing citations data unchanged.")
+        sys.exit(0)
+
     citations = match_publications(local_pubs, scholar_pubs)
 
     output = {
