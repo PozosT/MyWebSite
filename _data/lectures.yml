@@ -1,2 +1,9 @@
-- name: Guest lectures during <a href="https://studiegids.tudelft.nl/a101_displayCourse.do?restoreContext=true&SIS_SwitchLang=nl&course_id=59435" target="_blank">Human-Machine Systems</a> course lead by <a href="https://sites.google.com/site/jcfdewinter" target="_blank">Dr. Joost de Winter</a> at TU Delft
-  year: 2015
+# Guest courses and lectures. Format:
+# - name: "Description (HTML allowed)"
+#   year: 2024
+
+- name: 10-hour minicourse for graduate students at LaPSEE, the power systems laboratory of <a href="https://www.feis.unesp.br/" target="_blank">UNESP</a> (Ilha Solteira, Brazil), on spectral and spatial analysis of power systems, CAPES-PRINT internationalization program. <a href="https://github.com/PozosT/Lapsee_minicurso_2026" target="_blank">Course materials</a>
+  year: 2026
+
+- name: 10-hour minicourse for graduate students at LaPSEE, the power systems laboratory of <a href="https://www.feis.unesp.br/" target="_blank">UNESP</a> (Ilha Solteira, Brazil), on optimization and machine learning for the operation of microgrids, CAPES-PRINT internationalization program
+  year: 2023

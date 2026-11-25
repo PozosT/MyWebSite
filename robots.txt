@@ -22,7 +22,6 @@ Allow: /js/
 Allow: /images/
 Allow: /_publications/
 Allow: /_courses/
-Allow: /_workshops/
 
 # Crawl delay (optional)
 Crawl-delay: 1 

@@ -76,6 +76,13 @@
     - "Beltrán Contreras, Andrés Leonardo"
     - "Quiñones Calderón, Juan David"
 
+- title: "Preprocesamiento de imágenes satelitales para la predicción de irradiancia solar"
+  period: "2025-1"
+  co_advisor: "Guillermo Andrés Jiménez Estévez"
+  program_name: "Ingeniería Electrónica"
+  students:
+    - "Arango Navarrete, Camilo Andrés"
+
 - title: "Comparación de arquitecturas de redes neuronales para pronóstico de generación solar en el contexto colombiano"
   period: "2025-2"
   students:

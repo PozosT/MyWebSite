@@ -6,3 +6,33 @@
 #   organisation_url: https://...
 #   subtitle: "Optional description"
 #   year: 2024
+
+- name: "Herramienta computacional para la toma de decisiones en microrredes"
+  organisation: "Horizontes Conectados, internal competitive grant, Universidad de los Andes"
+  subtitle: "Principal investigator; Solar Living Lab; in progress"
+  year: 2025
+
+- name: "Modelamiento y monitoreo de sistema de microrredes"
+  organisation: "Vínculos entre Profesores, internal competitive grant, Universidad de los Andes"
+  subtitle: "Principal investigator; Solar Living Lab, with four departments of the School of Engineering"
+
+- name: "Digital shadow of the El Paso photovoltaic plant"
+  organisation: "ENEL Colombia"
+  subtitle: "Co-investigator; source code transferred to the company"
+
+- name: "Co-development of a commercial product for routing multi-skilled staff"
+  organisation: "ALFRED, Co-Creation with Companies call, Universidad de los Andes"
+  subtitle: "Co-principal investigator; prototype validated with the company's real data, commercial evaluation in progress"
+
+- name: "Water-loss consultancy for the Bogotá water utility"
+  organisation: "Empresa de Acueducto y Alcantarillado de Bogotá (EAAB)"
+  subtitle: "Technical lead of the data-analytics subgroup"
+  year: 2025–2026
+
+- name: "Applied research project"
+  organisation: "Smurfit Westrock Colombia"
+  subtitle: "Co-investigator; in progress"
+
+- name: "Co-creation project"
+  organisation: "FLOTA"
+  subtitle: "Co-investigator; in progress"

@@ -1,7 +1,7 @@
 - name: Dra. Alejandra Tabares Pozos
   photo-small: Alejandra_seria.jpeg
   photo-large: Aleja_jugando.jpeg
-  info: Assistant professor at Los Andes University
+  info: Assistant Professor, Department of Industrial Engineering, Universidad de los Andes
   email: a.tabaresp@uniandes.edu.co
   github: https://github.com/PozosT
   scholar: https://scholar.google.com/citations?user=C9PY5CwAAAAJ&hl=en
@@ -9,15 +9,15 @@
   orcid: https://orcid.org/0000-0002-6630-5582
   cv:
   number_educ: 6
-  education1: (2021–) Assistant professor in <a href="https://www.uniandes.edu.co" target="_blank">Universidad de los Andes</a> 🇨🇴, focused on machine learning, energy systems optimization, and digital twins for renewable energy plants.
-  education2: (2019–2021) Postdoctoral fellow in electrical engineering at <a href="https://www.unesp.br" target="_blank">Universidade Estadual Paulista (UNESP)</a>, working on stochastic and deterministic models for power systems optimization 🇧🇷.
-  education3: (2017–2018) Doctoral internship at <a href="https://www.uclm.es" target="_blank">Universidad de Castilla-La Mancha</a>, Spain, focusing on reliability evaluation for distribution networks 🇪🇸.
-  education4: (2015–2019) <b>PhD in Electrical Engineering</b> at <a href="https://www.unesp.br" target="_blank">UNESP</a>, specializing in reliability and optimization models for energy distribution networks 🇧🇷.
-  education5: (2013–2015) <b>MSc in Electrical Engineering</b> at <a href="https://www.unesp.br" target="_blank">UNESP</a>, focusing on dynamic expansion planning for energy distribution systems 🇧🇷.
+  education1: (2021–) Assistant Professor in the Department of Industrial Engineering at <a href="https://www.uniandes.edu.co" target="_blank">Universidad de los Andes</a> 🇨🇴, where I lead my research program on decision-making for cyber-physical systems. Coordinator of the Department's Integrated Learning Environment (AIA) since 2026.
+  education2: (2019–2021) Postdoctoral fellow (UNESP–FAPESP) at <a href="https://www.unesp.br" target="_blank">Universidade Estadual Paulista (UNESP)</a>, working on stochastic and deterministic models for power systems optimization 🇧🇷.
+  education3: (2017–2018) Doctoral research stay at <a href="https://www.uclm.es" target="_blank">Universidad de Castilla-La Mancha</a>, Spain, focusing on reliability evaluation for distribution networks 🇪🇸.
+  education4: (2015–2019) <b>PhD in Electrical Engineering</b>, with emphasis on operations research, at <a href="https://www.unesp.br" target="_blank">UNESP</a>, specializing in reliability and optimization models for energy distribution networks 🇧🇷.
+  education5: (2013–2015) <b>MSc in Electrical Engineering</b>, with emphasis on operations research, at <a href="https://www.unesp.br" target="_blank">UNESP</a>, focusing on dynamic expansion planning for energy distribution systems 🇧🇷.
   education6: (2006–2012) <b>BSc in Industrial Engineering</b> at <a href="https://www.utp.edu.co" target="_blank">Universidad Tecnológica de Pereira</a>, Colombia, graduating with honors 🇨🇴.
-  education1short: (2021–) Assistant professor, Uniandes
+  education1short: (2021–) Assistant Professor, Uniandes
   education2short: (2019–21) Postdoc, UNESP
-  education3short: (2017–18) Doctoral intern, UCLM
+  education3short: (2017–18) Doctoral stay, UCLM
   education4short: (2015–19) PhD, UNESP
   education5short: (2013–15) MSc, UNESP
   education6short: (2006–12) BSc, UTP

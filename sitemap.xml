@@ -47,14 +47,4 @@ layout: null
   </url>
   {% endfor %}
   
-  <!-- Workshops -->
-  {% for workshop in site.workshops %}
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}{{ workshop.url }}</loc>
-    <lastmod>{% if workshop.lastmod %}{{ workshop.lastmod | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  {% endfor %}
-  
 </urlset> 

@@ -149,6 +149,14 @@
     - "Cáceres García, Nicolás Felipe"
     - "Uribe Hidalgo, Carlos Andrés"
 
+- title: "Caracterización mejorada de la conectividad entre pozos en un campo petrolero en Colombia"
+  program: MIIA
+  period: "2024-2"
+  students:
+    - "Dueñas Criado, Danuil Elías"
+    - "Aldana Cortés, Nicolás Alejandro"
+    - "Salazar Quiroga, José Yesid"
+
 - title: "Optimización de precios de compra de leche: un enfoque de Programación Dinámica Estocástica y Aprendizaje por Refuerzo Profundo"
   program: MIIA
   period: "2025-2"
@@ -176,3 +184,11 @@
   students:
     - "Guavita Peralta, Juan Camilo"
     - "Romero Mora, Germán Santiago"
+
+- title: "Pronóstico multihorizonte de irradiancia solar con deep learning e imágenes satelitales"
+  program: MEIC
+  program_name: "Maestría en Ingeniería Electrónica y de Computadores"
+  period: "2025-2"
+  co_advisor: "Guillermo Andrés Jiménez Estévez"
+  students:
+    - "Arango Navarrete, Camilo Andrés"

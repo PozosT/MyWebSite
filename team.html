@@ -27,7 +27,7 @@ permalink: /team/
 <!-- PhD Students Section -->
 {% if site.data.phd_students.size > 0 %}
 <h2 class="mt-4 mb-3" style="color:#1e40af;"><i class="fas fa-user-graduate me-2"></i>PhD Students</h2>
-<p class="text-muted mb-4">Doctoral researchers working under my supervision at Universidad de los Andes.</p>
+<p class="text-muted mb-4">Doctoral theses I supervise or co-supervise at Universidad de los Andes: one completed and three in progress.</p>
 
 <div class="phd-grid">
 {% for student in site.data.phd_students %}
@@ -37,7 +37,8 @@ permalink: /team/
     <div class="phd-info">
       <h4 class="phd-name">{{ student.name }}</h4>
       <div class="phd-program">{{ student.program }} · {{ student.university }}</div>
-      {% if student.status == 'active' %}<span class="phd-status-badge">Active</span>{% endif %}
+      {% if student.status == 'active' %}<span class="phd-status-badge">Active{% if student.expected_graduation %} · expected {{ student.expected_graduation }}{% endif %}</span>{% elsif student.status == 'graduated' %}<span class="phd-status-badge phd-status-graduated">Graduated {{ student.graduation_year }}</span>{% endif %}
+      {% if student.cosupervisor %}<div class="phd-program">Co-supervised with {{ student.cosupervisor }}</div>{% endif %}
       <div class="phd-links">
         {% if student.scholar %}<a href="{{ student.scholar }}" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>{% endif %}
         {% if student.orcid %}<a href="{{ student.orcid }}" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>{% endif %}
@@ -173,6 +174,7 @@ permalink: /team/
   border-radius: 12px;
   margin-bottom: 0.4rem;
 }
+.phd-status-graduated { background: #eff6ff; color: #1e40af; }
 .phd-links {
   display: flex;
   gap: 0.6rem;

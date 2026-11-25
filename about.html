@@ -39,16 +39,25 @@ permalink: /about/
 <h2>Short Biography</h2>
 
 <div class="about-bio">
-Dr. Alejandra Tabares Pozos is an Assistant Professor in the Department of Industrial Engineering at the Universidad de los Andes in Bogotá, Colombia. She is an Industrial Engineer with a Ph.D. in Electrical Engineering, specializing in the application of advanced mathematical models to solve critical challenges in modern energy systems.
+<p>Alejandra Tabares Pozos is an Assistant Professor in the Department of Industrial Engineering at Universidad de los Andes in Bogotá, Colombia. She specializes in models and methods for decision-making under uncertainty that integrate operations research, data analytics, and machine learning. Her research focuses on the planning, operation, control, and coordination of energy networks, water networks, and production and logistics systems.</p>
 
-Her research is centered on leveraging stochastic optimization, artificial intelligence, and reinforcement learning to address the complexities of the energy transition in Colombia and Latin America. Dr. Tabares is driven by a clear vision: to develop computational tools that not only represent a scientific breakthrough but also deliver a tangible impact — ensuring more reliable, sustainable, and equitable access to energy for all communities, transforming the technical complexity of microgrids into practical solutions that foster social development and environmental protection.
+<p>She received her B.Sc. in Industrial Engineering from Universidad Tecnológica de Pereira and her M.Sc. (2015) and Ph.D. (2019) in Electrical Engineering, with emphasis on operations research, from Universidade Estadual Paulista (UNESP), Brazil. She was a postdoctoral fellow at the same institution from 2019 to 2021, before joining Universidad de los Andes in July 2021.</p>
 
-Dr. Tabares earned her Ph.D. and M.Sc. in Electrical Engineering from São Paulo State University (UNESP), Brazil. She completed her undergraduate studies in Industrial Engineering with honors at the Universidad Tecnológica de Pereira (UTP) in Colombia. Her postdoctoral work was conducted as a Research Assistant with the São Paulo Research Foundation (FAPESP). During her doctoral studies, she was a visiting research scholar at the University of Castilla-La Mancha in Spain.
+<p>Her research program, <em>decision-making for cyber-physical systems</em>, studies cyber-physical systems, in which physical processes interact with data acquisition, computation, and control. Its central question is: <em>How can we build technically robust, economically viable, and computationally tractable decisions and policies for cyber-physical systems?</em> To address it, she combines six families of methods: exact mathematical optimization, optimization under uncertainty, sequential decision-making, approximate optimization, statistical learning, and network science.</p>
 
-A leader in her field, Dr. Tabares heads the Renewable Energy Living Lab at Universidad de los Andes, an initiative that provides a real-world microgrid environment for validating innovative algorithms and technologies. She has also led industry-focused projects, including the co-direction of a project with ENEL to develop a predictive and optimization algorithm for the El Paso solar plant.
+<p>In energy systems, she has worked on the expansion of distribution networks, microgrid management, the integration of renewable energy, and electric-vehicle charging infrastructure. Her results include MARLEM, a simulation environment for local energy markets with multi-agent reinforcement learning, created with Nelson Salazar, her first Ph.D. graduate, and Professor Andrés González-Mancera of the Department of Mechanical Engineering. As a co-investigator in a project with ENEL Colombia, she helped develop a digital shadow that forecasts the output of a photovoltaic plant and is currently used by its operators as a decision-making tool. She also promoted the creation of the Solar Living Lab, a living laboratory for microgrids that brings together four departments of the School of Engineering.</p>
 
-Mentorship is a cornerstone of her academic career. Dr. Tabares is committed to training the next generation of scientists, supervising graduate students whose research advances microgrid management, from local energy markets to hybrid AI operational models. Her teaching portfolio includes graduate and undergraduate courses such as Optimization under Uncertainty, Probabilistic Models, Network Flow Optimization, Metaheuristics, and Smart Microgrids.
+<p>In water networks, she works with the Centro de Investigaciones en Acueductos y Alcantarillados (CIACUA), the University's research center on water supply and sewer systems. She was the technical lead of her team's solutions in two editions of the <em>Battle of the Water Networks</em> and of the data analytics subgroup of a consulting project for Empresa de Acueducto y Alcantarillado de Bogotá, the city's water utility. In that project she contributed to estimating the components of the water balance and to formulating a digitalization roadmap. She also studies the vulnerability of these networks with spectral graph theory and graph neural networks.</p>
+
+<p>In production and logistics, her projects combine optimization, learning, and experimentation with cyber-physical systems. The Department's Ambiente Integrado de Aprendizaje (AIA, Integrated Learning Environment), which she has coordinated since 2026, provides a space for this line of work, with collaborative robotics and digital twins.</p>
+
+<p>Between August 2021 and June 2026 she published 18 articles in indexed journals, 16 of them in SCImago first-quartile journals. In 2024 the School of Engineering of Universidad de los Andes granted her the <em>Investigadora Destacada</em> (Outstanding Researcher) award in the Assistant Professor category. In 2025 she was classified as a Senior Researcher by Colombia's Ministry of Science, Technology and Innovation (MinCiencias). She maintains collaborations with UNESP and with Forschungszentrum Jülich, in Germany, one of the largest interdisciplinary research centers in Europe and a founding member of the Helmholtz Association.</p>
+
+<p>Her teaching covers probabilistic modeling, optimization, and statistical analysis. She teaches in the undergraduate program, the research master's in Industrial Engineering, and the professional master's in analytics for decision-making. She has extended her teaching to continuing education, with data analytics courses and programs for professionals. Between 2021 and 2026 she supervised or co-supervised 50 theses and degree projects: 19 undergraduate, 27 master's, and four doctoral theses, one completed and three in progress. These works cover applications in energy, water, transportation, and logistics, as well as in health, finance, and hydrocarbons.</p>
+
+<p>At the institutional level, she was elected faculty representative to the Council of the School of Engineering for two consecutive terms, 2024–2025 and 2025–2026. She has represented the Department before the Institute of Industrial and Systems Engineers (IISE) since 2023. In the undergraduate curriculum reform, she led the restructuring of one required course and the creation of another. She is also co-designing three courses for the School's new master's in energy systems innovation. In the coming years she seeks to consolidate the spaces for interdisciplinary experimentation, broaden her international collaboration, and develop projects that sustain the training of researchers and the transfer of results to organizations.</p>
 </div>
+
 
 {% if site.data.awards %}
 <div class="about-section-label" style="margin-top:2rem"><i class="fas fa-trophy me-2"></i>Awards</div>
@@ -58,7 +67,7 @@ Mentorship is a cornerstone of her academic career. Dr. Tabares is committed to 
     <span class="about-item-name">{% if award.name_url %}<a href="{{ award.name_url }}" target="_blank">{{ award.name }}</a>{% else %}{{ award.name }}{% endif %}</span>
     {% if award.organisation %}<span class="about-item-org"> — {% if award.organisation_url %}<a href="{{ award.organisation_url }}" target="_blank">{{ award.organisation }}</a>{% else %}{{ award.organisation }}{% endif %}</span>{% endif %}
     {% if award.subtitle %}<span class="about-item-sub">: {{ award.subtitle }}</span>{% endif %}
-    <span class="about-item-year">({{ award.year }})</span>
+    {% if award.year %}<span class="about-item-year">({{ award.year }})</span>{% endif %}
   </li>
 {% endfor %}
 </ol>
@@ -72,7 +81,7 @@ Mentorship is a cornerstone of her academic career. Dr. Tabares is committed to 
     <span class="about-item-name">{% if grant.name_url %}<a href="{{ grant.name_url }}" target="_blank">{{ grant.name }}</a>{% else %}{{ grant.name }}{% endif %}</span>
     {% if grant.organisation %}<span class="about-item-org"> — {% if grant.organisation_url %}<a href="{{ grant.organisation_url }}" target="_blank">{{ grant.organisation }}</a>{% else %}{{ grant.organisation }}{% endif %}</span>{% endif %}
     {% if grant.subtitle %}<span class="about-item-sub">: {{ grant.subtitle }}</span>{% endif %}
-    <span class="about-item-year">({{ grant.year }})</span>
+    {% if grant.year %}<span class="about-item-year">({{ grant.year }})</span>{% endif %}
   </li>
 {% endfor %}
 </ol>

@@ -19,7 +19,7 @@ permalink: /education/
   <div class="edu-course-card">
     <div class="edu-course-header">
       <div class="edu-course-meta">
-        <span class="edu-course-code">{{ course.code }}</span>
+        {% if course.code %}<span class="edu-course-code">{{ course.code }}</span>{% endif %}
         {% if course.type == 'undergraduate' %}<span class="edu-badge edu-badge-undergrad">Pregrado</span>
         {% elsif course.type == 'msc' %}<span class="edu-badge edu-badge-msc">Maestría</span>
         {% else %}<span class="edu-badge edu-badge-grad">Posgrado</span>
@@ -39,7 +39,7 @@ permalink: /education/
 
 {% if site.data.lectures %}
 {% assign lectures = site.data.lectures | sort: 'year' | reverse %}
-<div class="edu-section-label" style="margin-top:2rem"><i class="fas fa-microphone me-2"></i>Guest Lectures</div>
+<div class="edu-section-label" style="margin-top:2rem"><i class="fas fa-microphone me-2"></i>Guest Courses</div>
 <ol class="edu-list">
 {% for lecture in lectures %}
   <li class="edu-list-item">{{ lecture.name }} <span class="edu-year">({{ lecture.year }})</span></li>

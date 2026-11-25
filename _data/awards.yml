@@ -6,3 +6,14 @@
 #   organisation_url: https://...
 #   subtitle: "Optional description"
 #   year: 2024
+
+- name: "Senior Researcher (Investigadora Sénior), on first application"
+  organisation: "MinCiencias, Ministry of Science, Technology and Innovation of Colombia"
+  organisation_url: https://minciencias.gov.co/
+  year: 2025
+
+- name: "Investigadora Destacada (Outstanding Researcher) award"
+  organisation: "School of Engineering, Universidad de los Andes"
+  organisation_url: https://ingenieria.uniandes.edu.co/
+  subtitle: "Assistant Professor category"
+  year: 2024

@@ -70,7 +70,7 @@ permalink: /students/
       <li class="sup-item{% if t.status %} sup-inprogress{% endif %}">
         <div class="sup-item-main">{{ t.title }}</div>
         <div class="sup-item-meta">
-          {% if t.program == 'MIIND' %}<span class="badge-prog badge-miind">MIIND</span>{% else %}<span class="badge-prog badge-miia">MIIA</span>{% endif %}
+          {% if t.program == 'MIIND' %}<span class="badge-prog badge-miind">MIIND</span>{% elsif t.program == 'MIIA' %}<span class="badge-prog badge-miia">MIIA</span>{% else %}<span class="badge-prog badge-pregrado" title="{{ t.program_name }}">{{ t.program }}</span>{% endif %}
           <span class="sup-period"><i class="fas fa-calendar-alt me-1"></i>{{ t.period }}</span>
           <span class="sup-nstudents"><i class="fas fa-users me-1"></i>{{ t.students | size }} students</span>
           {% if t.status %}<span class="sup-status-badge">{{ t.status }}</span>{% endif %}

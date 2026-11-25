@@ -1,15 +1,14 @@
 ---
-title: "Flujo en Redes"
+title: "Network Flow & Transportation Analytics"
 layout: course
 sitemap: false
-name: Flujo en Redes
+name: Network Flow & Transportation Analytics (antes Flujo en Redes)
 name_url: https://pozost.github.io/Flujo_en_redes/SyllabusFlujoEnRedes.html
-year_start: 2025
+year_start: 2022
 year_end: 
 institution: Universidad de los Andes
 type: msc
-type: advanced
-students: 30+
+students: 8–12 por sección
 code: REDFLU-2025
 subheading: Optimización de redes y análisis algorítmico aplicados a problemas complejos de ingeniería.
 pdf: flujo_redes_2025-studyguide
@@ -20,7 +19,7 @@ comment:
 El curso "Flujo en Redes" presenta a los estudiantes técnicas avanzadas de optimización y modelado en redes, incluyendo herramientas como programación lineal, análisis combinatorio y enfoques basados en datos. Este curso se centra en aplicaciones prácticas relevantes para redes de transporte, telecomunicaciones, logística y producción.
 
 #### Mi rol
-- 2022–: co-responsable del curso junto al profesor David Álvarez.
+- 2022–: curso dictado con el profesor David Álvarez-Martínez; la mitad de modelamiento está a mi cargo.
 
 #### Objetivos de aprendizaje
 - **O1**. Comprender conceptos clave de optimización en redes y su aplicabilidad en diferentes áreas de ingeniería.

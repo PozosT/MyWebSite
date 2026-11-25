@@ -1,7 +1,7 @@
 # Site settings
 title: Dra. Alejandra Tabares Pozos
 email: a.tabaresp@uniandes.edu.co
-description: Personal webpage of Dra. Alejandra Tabares Pozos - Assistant Professor at Universidad de los Andes
+description: Personal webpage of Dra. Alejandra Tabares Pozos - Assistant Professor of Industrial Engineering at Universidad de los Andes - decision-making for cyber-physical systems
 baseurl: "/MyWebSite" # Ajustado para el repositorio MyWebSite
 url: "https://pozost.github.io"
 affiliation: I am part of the <a href="https://industrial.uniandes.edu.co/es" target="_blank">Industrial Engineering Department</a>  at Los Andes University.
@@ -36,8 +36,6 @@ collections:
   courses:
     output: true
   publications:
-    output: true
-  workshops:
     output: true
 
 include:
