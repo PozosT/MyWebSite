@@ -2,7 +2,7 @@
 # - name: "Description (HTML allowed)"
 #   year: 2024
 
-- name: 10-hour minicourse for graduate students at LaPSEE, the power systems laboratory of <a href="https://www.feis.unesp.br/" target="_blank">UNESP</a> (Ilha Solteira, Brazil), on spectral and spatial analysis of power systems, CAPES-PRINT internationalization program. <a href="https://github.com/PozosT/Lapsee_minicurso_2026" target="_blank">Course materials</a>
+- name: 10-hour minicourse for graduate students at LaPSEE, the power systems laboratory of <a href="https://www.feis.unesp.br/" target="_blank">UNESP</a> (Ilha Solteira, Brazil), “Introduction to Power Networks as Intelligent Graphs”, on spectral and spatial analysis of power systems, CAPES-PRINT internationalization program. <a href="https://github.com/PozosT/Lapsee_minicurso_2026" target="_blank">Course materials</a>
   year: 2026
 
 - name: 10-hour minicourse for graduate students at LaPSEE, the power systems laboratory of <a href="https://www.feis.unesp.br/" target="_blank">UNESP</a> (Ilha Solteira, Brazil), on optimization and machine learning for the operation of microgrids, CAPES-PRINT internationalization program
